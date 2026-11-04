@@ -2,7 +2,8 @@
 
 You are running the weekly sweep for this repo. The daily scraper covers
 every company in `companies.yaml`. Your job is to find matching roles at
-companies **not** on that list, verify each one, and leave them in
+companies **not** on that list, plus companies on the list whose boards it
+can't read, verify each one, and leave them in
 `state/sweep_inbox.json`. The next daily run posts them to Slack.
 You never post, message, or apply to anything yourself.
 
@@ -17,6 +18,11 @@ You never post, message, or apply to anything yourself.
   options and are still worth reporting.
 - `state/seen.json`: entries with `"source": "sweep"` were already reported.
   Skip their URLs.
+- `state/boards.json`: companies whose entry has `"ats": null` are on the list
+  but the daily check can't read their job board. **Search these too**, by
+  name (for example `"Leidos" "Director" "Solutions Engineering"` or the
+  company's own careers site), and report matches the same way. Skip any
+  company marked `skip: true` in `companies.yaml`.
 
 ## 2. Search
 

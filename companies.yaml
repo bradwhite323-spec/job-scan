@@ -39,6 +39,7 @@ Conversational AI and CX:
   - {name: Genesys, slugs: [genesys], careers: 'https://www.genesys.com/company/careers'}
   - {name: Sierra, slugs: [sierra]}
   - {name: Decagon, slugs: [decagon]}
+  - {name: Front, slugs: [frontcareers], careers: 'https://front.com/careers'}
   - {name: Intercom, board: {ats: greenhouse, slug: intercom}}  # board is titled "Fin"
   - {name: Gong, slugs: [gongio, gong]}
   - {name: Talkdesk, slugs: [talkdesk2, talkdesk]}
@@ -71,7 +72,7 @@ Fintech and spend management:
 
 HR, payroll and global employment:
   - {name: Deel, slugs: [deel], careers: 'https://www.deel.com/careers'}
-  - {name: Rippling, slugs: [rippling], careers: 'https://www.rippling.com/careers'}
+  - {name: Rippling, board: {ats: rippling, slug: rippling}}
   - {name: Gusto, slugs: [gusto]}
   - {name: Justworks, slugs: [justworks]}
   - {name: Checkr, slugs: [checkr]}
@@ -116,7 +117,7 @@ Data, observability and developer infrastructure:
   - {name: GitLab, slugs: [gitlab]}
   - {name: Dataiku, slugs: [dataiku]}
   - {name: Fivetran, slugs: [fivetran]}
-  - {name: dbt Labs, slugs: [dbtlabsinc, dbtlabs], careers: 'https://www.getdbt.com/careers'}
+  - {name: dbt Labs, skip: true}  # merged with Fivetran; covered by Fivetran's board
   - {name: Confluent, slugs: [confluent], careers: 'https://careers.confluent.io'}
   - {name: MongoDB, slugs: [mongodb]}
   - {name: Grafana Labs, slugs: [grafanalabs]}
@@ -152,6 +153,7 @@ Security:
   - {name: Expel, slugs: [expel]}
   - {name: Socure, slugs: [socure]}
   - {name: Persona, slugs: [withpersona, persona]}
+  - {name: Blackbird.AI, slugs: [blackbirdai], careers: 'https://blackbird.ai/careers/'}
 
 Digital and mental health:
   - {name: Ro, slugs: [ro, roman]}
@@ -241,6 +243,7 @@ Sales, go-to-market and market intelligence:
   - {name: Outreach, slugs: [outreach]}
   - {name: ZoomInfo, slugs: [zoominfo]}
   - {name: HubSpot, slugs: [hubspotjobs, hubspot]}
+  - {name: Seismic, no_guess: true, careers: 'https://seismic.com/careers/'}
   - {name: Common Room, slugs: [commonroom], careers: 'https://www.commonroom.io/careers/'}
 
 Quantum:

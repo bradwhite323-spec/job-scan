@@ -281,3 +281,16 @@ def test_gem_and_rippling_parse(monkeypatch):
     jobs, _ = watch.read_rippling("acme")
     assert [j["title"] for j in jobs] == ["Head of Support", "Engineer"]
     assert jobs[0]["_src"]["workplace"] == "Remote" and jobs[1]["location"] == "Denver, CO"
+
+
+def test_sweep_keeps_uncovered_list_companies(tmp_path, monkeypatch):
+    monkeypatch.setattr(watch, "SWEEP_FILE", tmp_path / "sweep.json")
+    watch.save_json(watch.SWEEP_FILE, {"items": [
+        {"company": "Leidos", "title": "Director, Solutions Engineering", "url": "https://l/1", "location": "Remote - US"},
+        {"company": "Stripe", "title": "Head of Support", "url": "https://s/1", "location": "NYC"}]})
+    roles, _ = watch.take_sweep({}, [{"name": "Leidos"}, {"name": "Stripe"}], S, "2026-11-09", {"Leidos"})
+    assert [r["company"] for r in roles] == ["Leidos"]
+
+
+def test_no_guess():
+    assert watch.slug_candidates({"name": "Seismic", "no_guess": True}) == []

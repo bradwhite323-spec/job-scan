@@ -601,6 +601,8 @@ class TitleMatcher:
 def slug_candidates(company: dict) -> list[str]:
     base = re.sub(r"\(.*?\)", "", company["name"]).lower()
     cands = list(company.get("slugs") or [])
+    if company.get("no_guess"):   # name collides with another company's board
+        return cands
     cands += [re.sub(r"[^a-z0-9]", "", base), re.sub(r"[^a-z0-9]+", "-", base).strip("-")]
     out = []
     for c in cands:
@@ -868,7 +870,8 @@ def run(args):
             seen[j["id"]].update(pay=j["pay"], tier=j["tier"])
 
     # 4. Pick up roles the weekly sweep found outside the list.
-    sweep, suggestions = take_sweep(seen, companies, sorter, today.isoformat())
+    uncovered_names = {c["name"] for c in companies if not board_for(c, boards)}
+    sweep, suggestions = take_sweep(seen, companies, sorter, today.isoformat(), uncovered_names)
 
     tier_names = [t["name"] for t in loc_cfg["tiers"]]
     text = build_digest(new, closed, uncovered, failed, len(ok), first_run,
@@ -900,10 +903,12 @@ def _squash(s: str) -> str:
     return re.sub(r"[^a-z0-9]", "", re.sub(r"\(.*?\)", "", s.lower()))
 
 
-def take_sweep(seen: dict, companies: list[dict], sorter: LocationSorter, today: str):
-    """Reads state/sweep_inbox.json written by the weekly sweep. Returns (roles, suggestions)."""
+def take_sweep(seen: dict, companies: list[dict], sorter: LocationSorter, today: str,
+               uncovered: set[str] = frozenset()):
+    """Reads state/sweep_inbox.json written by the weekly sweep. Returns (roles, suggestions).
+    Roles at list companies are kept only when the daily check can't read that company's board."""
     inbox = load_json(SWEEP_FILE, {})
-    on_list = {_squash(c["name"]) for c in companies}
+    on_list = {_squash(c["name"]) for c in companies if c["name"] not in uncovered}
     roles = []
     for item in inbox.get("items", []):
         if not item.get("url") or not item.get("title") or not item.get("company"):
