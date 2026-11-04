@@ -15,7 +15,6 @@
  },
  "ASAPP": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Abnormal Security": {
@@ -83,7 +82,6 @@
  },
  "Alma": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "AlphaSense": {
@@ -160,7 +158,6 @@
  },
  "Atlassian": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "platform": "icims",
   "tried": "2026-11-04"
  },
@@ -199,6 +196,10 @@
   "jobs": 43,
   "slug": "billcom"
  },
+ "Blackbird.AI": {
+  "ats": null,
+  "tried": "2026-11-04"
+ },
  "Block (Square)": {
   "ats": "greenhouse",
   "board_name": "Block",
@@ -230,7 +231,6 @@
  },
  "CSAA Insurance Group": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Calendly": {
@@ -242,7 +242,6 @@
  },
  "Calix": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Canva": {
@@ -290,7 +289,6 @@
  },
  "Ciena": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Cityblock Health": {
@@ -317,7 +315,6 @@
  },
  "Clearcover": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "ClickHouse": {
@@ -364,7 +361,6 @@
  },
  "Common Room": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Commure": {
@@ -376,7 +372,6 @@
  },
  "Confluent": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "CoreWeave": {
@@ -416,14 +411,15 @@
  },
  "Cyera": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "D-Wave": {
-  "ats": null,
-  "error": "retry with Gem/Rippling support",
-  "platform": "rippling",
-  "tried": "2026-11-04"
+  "ats": "rippling",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 59,
+  "slug": "d-wave-quantum",
+  "via": "careers page"
  },
  "Databricks": {
   "ats": "greenhouse",
@@ -455,7 +451,6 @@
  },
  "Deel": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Devoted Health": {
@@ -523,7 +518,6 @@
  },
  "EverCommerce": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Expel": {
@@ -564,14 +558,22 @@
  },
  "Framer": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
+ "Front": {
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 1,
+  "slug": "frontcareers"
+ },
  "Function Health": {
-  "ats": null,
-  "error": "retry with Gem/Rippling support",
-  "platform": "gem",
-  "tried": "2026-11-04"
+  "ats": "gem",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 33,
+  "slug": "function-health",
+  "via": "careers page"
  },
  "Generate Biomedicines": {
   "ats": "greenhouse",
@@ -704,7 +706,6 @@
  },
  "Hims & Hers": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Hinge Health": {
@@ -740,7 +741,6 @@
  "Hugging Face": {
   "ats": "workable",
   "board_name": "Hugging Face",
-  "broken": "2026-11-04",
   "found": "2026-11-04",
   "jobs": 6,
   "slug": "huggingface"
@@ -767,13 +767,15 @@
   "slug": "includedhealth"
  },
  "Infleqtion": {
-  "ats": null,
-  "error": "retry with Gem/Rippling support",
-  "tried": "2026-11-04"
+  "ats": "workable",
+  "board_name": "Infleqtion",
+  "found": "2026-11-04",
+  "jobs": 70,
+  "slug": "coldquanta",
+  "via": "careers page"
  },
  "Insilico Medicine": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Insitro": {
@@ -863,7 +865,6 @@
  },
  "Leidos": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Lemonade": {
@@ -896,7 +897,6 @@
  },
  "Marqeta": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Maven Clinic": {
@@ -944,7 +944,6 @@
  },
  "Monday.com": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "MongoDB": {
@@ -975,7 +974,6 @@
  },
  "Next Insurance": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "platform": "phenom",
   "tried": "2026-11-04"
  },
@@ -1058,7 +1056,6 @@
  },
  "Papaya Global": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Patch My PC": {
@@ -1070,12 +1067,10 @@
  },
  "Paylocity": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Peraton": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "platform": "icims",
   "tried": "2026-11-04"
  },
@@ -1102,7 +1097,6 @@
  },
  "Pindrop": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Pinterest": {
@@ -1121,7 +1115,6 @@
  },
  "Procore": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "PsiQuantum": {
@@ -1189,10 +1182,12 @@
   "slug": "remote"
  },
  "Retool": {
-  "ats": null,
-  "error": "retry with Gem/Rippling support",
-  "platform": "gem",
-  "tried": "2026-11-04"
+  "ats": "gem",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 25,
+  "slug": "retool",
+  "via": "careers page"
  },
  "Revolution Medicines": {
   "ats": "greenhouse",
@@ -1235,10 +1230,12 @@
   "slug": "robinhood"
  },
  "Root Insurance": {
-  "ats": null,
-  "error": "retry with Gem/Rippling support",
-  "platform": "rippling",
-  "tried": "2026-11-04"
+  "ats": "rippling",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 16,
+  "slug": "joinroot",
+  "via": "careers page"
  },
  "Rula": {
   "ats": "ashby",
@@ -1270,7 +1267,6 @@
  },
  "Schrodinger": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Second Front Systems": {
@@ -1279,6 +1275,10 @@
   "found": "2026-11-04",
   "jobs": 25,
   "slug": "second-front-systems"
+ },
+ "Seismic": {
+  "ats": null,
+  "tried": "2026-11-04"
  },
  "Semgrep": {
   "ats": "ashby",
@@ -1303,7 +1303,6 @@
  },
  "Shopify": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Sierra": {
@@ -1364,7 +1363,6 @@
  },
  "Spring Health": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Starburst": {
@@ -1404,12 +1402,10 @@
  },
  "Superhuman (Grammarly)": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Switch": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Sword Health": {
@@ -1442,7 +1438,6 @@
  },
  "Tempus AI": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Tipalti": {
@@ -1519,7 +1514,6 @@
  },
  "Wiley": {
   "ats": null,
-  "error": "retry with Gem/Rippling support",
   "tried": "2026-11-04"
  },
  "Wiz": {
