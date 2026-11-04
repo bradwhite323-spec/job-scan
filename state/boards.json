@@ -15,7 +15,6 @@
  },
  "ASAPP": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Abnormal Security": {
@@ -83,7 +82,6 @@
  },
  "Alma": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "AlphaSense": {
@@ -129,14 +127,20 @@
   "slug": "apolloio"
  },
  "Applied Intuition": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 326,
+  "slug": "applied",
+  "via": "careers page"
  },
  "Arctic Wolf": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 25,
+  "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
+  "via": "careers page"
  },
  "Asana": {
   "ats": "greenhouse",
@@ -154,7 +158,7 @@
  },
  "Atlassian": {
   "ats": null,
-  "error": "retry with careers page",
+  "platform": "icims",
   "tried": "2026-11-04"
  },
  "Attentive": {
@@ -200,9 +204,12 @@
   "slug": "block"
  },
  "Booz Allen Hamilton": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 315,
+  "slug": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs",
+  "via": "careers page"
  },
  "Brex": {
   "ats": "greenhouse",
@@ -220,7 +227,7 @@
  },
  "CSAA Insurance Group": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:csaa-insurance-group HTTPError",
   "tried": "2026-11-04"
  },
  "Calendly": {
@@ -232,7 +239,7 @@
  },
  "Calix": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:calix HTTPError",
   "tried": "2026-11-04"
  },
  "Canva": {
@@ -271,19 +278,25 @@
   "slug": "chime"
  },
  "Chronosphere": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 510,
+  "slug": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers",
+  "via": "careers page"
  },
  "Ciena": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:ciena HTTPError",
   "tried": "2026-11-04"
  },
  "Cityblock Health": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 6,
+  "slug": "https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite",
+  "via": "careers page"
  },
  "Clay": {
   "ats": "recruitee",
@@ -301,7 +314,7 @@
  },
  "Clearcover": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:clearcover HTTPError",
   "tried": "2026-11-04"
  },
  "ClickHouse": {
@@ -348,7 +361,7 @@
  },
  "Common Room": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:common-room HTTPError",
   "tried": "2026-11-04"
  },
  "Commure": {
@@ -360,7 +373,6 @@
  },
  "Confluent": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "CoreWeave": {
@@ -400,12 +412,12 @@
  },
  "Cyera": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "D-Wave": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:d-wave HTTPError",
+  "platform": "rippling",
   "tried": "2026-11-04"
  },
  "Databricks": {
@@ -438,7 +450,6 @@
  },
  "Deel": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Devoted Health": {
@@ -506,7 +517,7 @@
  },
  "EverCommerce": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:evercommerce HTTPError",
   "tried": "2026-11-04"
  },
  "Expel": {
@@ -531,9 +542,12 @@
   "slug": "figma"
  },
  "Fireworks AI": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 90,
+  "slug": "fireworks",
+  "via": "careers page"
  },
  "Fivetran": {
   "ats": "greenhouse",
@@ -544,12 +558,11 @@
  },
  "Framer": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Function Health": {
   "ats": null,
-  "error": "retry with careers page",
+  "platform": "gem",
   "tried": "2026-11-04"
  },
  "Generate Biomedicines": {
@@ -560,9 +573,12 @@
   "slug": "generatebiomedicines"
  },
  "Genesys": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 59,
+  "slug": "https://genesys.wd1.myworkdayjobs.com/Genesys",
+  "via": "careers page"
  },
  "GitLab": {
   "ats": "greenhouse",
@@ -628,9 +644,12 @@
   "slug": "gusto"
  },
  "Hadrian": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 159,
+  "slug": "hadrian-automation",
+  "via": "careers page"
  },
  "Handshake": {
   "ats": "ashby",
@@ -654,9 +673,12 @@
   "slug": "headway"
  },
  "Hebbia": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 23,
+  "slug": "hebbia-ai",
+  "via": "careers page"
  },
  "Hex": {
   "ats": "ashby",
@@ -674,7 +696,6 @@
  },
  "Hims & Hers": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Hinge Health": {
@@ -685,14 +706,20 @@
   "slug": "hinge-health"
  },
  "Hippo": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "greenhouse",
+  "board_name": "Hippo Insurance",
+  "found": "2026-11-04",
+  "jobs": 20,
+  "slug": "hippo70",
+  "via": "careers page"
  },
  "Housecall Pro": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "greenhouse",
+  "board_name": "Housecall Pro",
+  "found": "2026-11-04",
+  "jobs": 54,
+  "slug": "housecall",
+  "via": "careers page"
  },
  "HubSpot": {
   "ats": "greenhouse",
@@ -732,12 +759,11 @@
  },
  "Infleqtion": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:infleqtion HTTPError",
   "tried": "2026-11-04"
  },
  "Insilico Medicine": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Insitro": {
@@ -827,7 +853,6 @@
  },
  "Leidos": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Lemonade": {
@@ -860,7 +885,6 @@
  },
  "Marqeta": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Maven Clinic": {
@@ -885,9 +909,12 @@
   "slug": "miro"
  },
  "Mistral AI": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 235,
+  "slug": "mistral.ai",
+  "via": "careers page"
  },
  "Modal": {
   "ats": "ashby",
@@ -905,7 +932,6 @@
  },
  "Monday.com": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "MongoDB": {
@@ -936,7 +962,8 @@
  },
  "Next Insurance": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:next-insurance HTTPError",
+  "platform": "phenom",
   "tried": "2026-11-04"
  },
  "Notion": {
@@ -1018,7 +1045,6 @@
  },
  "Papaya Global": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Patch My PC": {
@@ -1030,12 +1056,11 @@
  },
  "Paylocity": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Peraton": {
   "ats": null,
-  "error": "retry with careers page",
+  "platform": "icims",
   "tried": "2026-11-04"
  },
  "Perplexity": {
@@ -1061,7 +1086,6 @@
  },
  "Pindrop": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Pinterest": {
@@ -1080,7 +1104,7 @@
  },
  "Procore": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:procore HTTPError",
   "tried": "2026-11-04"
  },
  "PsiQuantum": {
@@ -1105,9 +1129,12 @@
   "slug": "qts"
  },
  "Quantinuum": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "levereu",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 131,
+  "slug": "quantinuum",
+  "via": "careers page"
  },
  "Ramp": {
   "ats": "greenhouse",
@@ -1146,7 +1173,7 @@
  },
  "Retool": {
   "ats": null,
-  "error": "retry with careers page",
+  "platform": "gem",
   "tried": "2026-11-04"
  },
  "Revolution Medicines": {
@@ -1172,7 +1199,6 @@
  },
  "Rippling": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Ro": {
@@ -1191,7 +1217,8 @@
  },
  "Root Insurance": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:root-insurance HTTPError",
+  "platform": "rippling",
   "tried": "2026-11-04"
  },
  "Rula": {
@@ -1224,7 +1251,6 @@
  },
  "Schrodinger": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Second Front Systems": {
@@ -1257,7 +1283,7 @@
  },
  "Shopify": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:shopify HTTPError",
   "tried": "2026-11-04"
  },
  "Sierra": {
@@ -1318,7 +1344,6 @@
  },
  "Spring Health": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Starburst": {
@@ -1358,12 +1383,11 @@
  },
  "Superhuman (Grammarly)": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Switch": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:switch HTTPError",
   "tried": "2026-11-04"
  },
  "Sword Health": {
@@ -1396,13 +1420,15 @@
  },
  "Tempus AI": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Tipalti": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "greenhouse",
+  "board_name": "Tipalti",
+  "found": "2026-11-04",
+  "jobs": 9,
+  "slug": "tipaltisolutions",
+  "via": "careers page"
  },
  "Toast": {
   "ats": "greenhouse",
@@ -1433,9 +1459,12 @@
   "slug": "vanta"
  },
  "Vantage Data Centers": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 146,
+  "slug": "https://vantagedc.wd1.myworkdayjobs.com/Vantage",
+  "via": "careers page"
  },
  "Vercel": {
   "ats": "greenhouse",
@@ -1467,7 +1496,7 @@
  },
  "Wiley": {
   "ats": null,
-  "error": "retry with careers page",
+  "error": "workable:wiley HTTPError",
   "tried": "2026-11-04"
  },
  "Wiz": {
@@ -1506,9 +1535,12 @@
   "slug": "zapier"
  },
  "Zendesk": {
-  "ats": null,
-  "error": "retry with careers page",
-  "tried": "2026-11-04"
+  "ats": "workday",
+  "board_name": null,
+  "found": "2026-11-04",
+  "jobs": 25,
+  "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",
+  "via": "careers page"
  },
  "Zocdoc": {
   "ats": "greenhouse",
@@ -1526,7 +1558,6 @@
  },
  "dbt Labs": {
   "ats": null,
-  "error": "retry with careers page",
   "tried": "2026-11-04"
  }
 }

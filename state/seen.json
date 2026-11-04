@@ -119,6 +119,56 @@
   "title": "Director of Solutions Engineering - EMEA Strat",
   "url": "https://jobs.ashbyhq.com/decagon/ab6a5dac-d63b-4862-bc12-c5c9525b6f8b"
  },
+ "ashby:hadrian-automation:1153f8c7-57ca-49bc-b4ea-b1262aebf255": {
+  "company": "Hadrian",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco Bay Area, CA",
+  "pay": "$300K\u2013$415K",
+  "tier": 1,
+  "title": "Director of Engineering, Forward Deployed Engineering",
+  "url": "https://jobs.ashbyhq.com/hadrian-automation/1153f8c7-57ca-49bc-b4ea-b1262aebf255"
+ },
+ "ashby:hadrian-automation:3dbea2da-8e23-4f0c-baff-9a4cf6268e95": {
+  "company": "Hadrian",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "Los Angeles, CA",
+  "pay": "$300K\u2013$415K",
+  "tier": 2,
+  "title": "Director, Forward Deployed Engineering - Manufacturing",
+  "url": "https://jobs.ashbyhq.com/hadrian-automation/3dbea2da-8e23-4f0c-baff-9a4cf6268e95"
+ },
+ "ashby:hadrian-automation:64b210f6-83f4-42d6-ba48-98df7c0cdf8c": {
+  "company": "Hadrian",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco Bay Area, CA",
+  "pay": "$300K\u2013$415K",
+  "tier": 1,
+  "title": "Sr. Director, Forward Deployed Engineering",
+  "url": "https://jobs.ashbyhq.com/hadrian-automation/64b210f6-83f4-42d6-ba48-98df7c0cdf8c"
+ },
+ "ashby:hadrian-automation:801e864e-5fbb-493b-bc3a-9b5ff265fbaa": {
+  "company": "Hadrian",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "Los Angeles, CA",
+  "pay": "$300K\u2013$415K",
+  "tier": 2,
+  "title": "Sr. Director, Forward Deployed Engineering",
+  "url": "https://jobs.ashbyhq.com/hadrian-automation/801e864e-5fbb-493b-bc3a-9b5ff265fbaa"
+ },
+ "ashby:hadrian-automation:9e76c3d0-b5a6-49e8-91b5-73967708628d": {
+  "company": "Hadrian",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "Los Angeles, CA",
+  "pay": "$300K\u2013$415K",
+  "tier": 2,
+  "title": "Director of Engineering, Forward Deployed Engineering",
+  "url": "https://jobs.ashbyhq.com/hadrian-automation/9e76c3d0-b5a6-49e8-91b5-73967708628d"
+ },
  "ashby:semgrep:f789bb11-98cd-4cb9-ba67-84c5435724d0": {
   "company": "Semgrep",
   "family": "Solution Consulting",
@@ -378,5 +428,155 @@
   "tier": 1,
   "title": "Head of Solutions Architecture, Startups",
   "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004"
+ },
+ "workday:bah:/job/McLean-VA/Cyber-Solutions-Architect-Director_R0238119": {
+  "company": "Booz Allen Hamilton",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "McLean, VA",
+  "pay": "$163K\u2013$303K",
+  "tier": 2,
+  "title": "Civil Cyber Solutions Architect Director",
+  "url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/McLean-VA/Cyber-Solutions-Architect-Director_R0238119"
+ },
+ "workday:genesys:/job/Madrid-Flexible/Director-Solutions-Consulting-South-East_JR112535-1": {
+  "company": "Genesys",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Madrid (Flexible)",
+  "pay": "",
+  "tier": 3,
+  "title": "Director Solutions Consulting South East",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Madrid-Flexible/Director-Solutions-Consulting-South-East_JR112535-1"
+ },
+ "workday:genesys:/job/Sao-Paulo-Brazil/Director--Product-Support---LATAM_JR112747": {
+  "company": "Genesys",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Sao Paulo, Brazil",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Product Support - LATAM",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Sao-Paulo-Brazil/Director--Product-Support---LATAM_JR112747"
+ },
+ "workday:genesys:/job/Singapore-Flexible/Director--Solution-Consulting--Asia_JR112156-1": {
+  "company": "Genesys",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Singapore (Flexible)",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Solution Consulting, Asia",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Singapore-Flexible/Director--Solution-Consulting--Asia_JR112156-1"
+ },
+ "workday:genesys:/job/Sydney-Flexible/Director--Solution-Consulting--ANZ_JR112125-1": {
+  "company": "Genesys",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "2 Locations",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Solution Consulting, ANZ",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Sydney-Flexible/Director--Solution-Consulting--ANZ_JR112125-1"
+ },
+ "workday:genesys:/job/Texas-USA/Director--Forward-Deployed-Engineering_JR112884": {
+  "company": "Genesys",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "8 Locations",
+  "pay": "$163K\u2013$287K",
+  "tier": 0,
+  "title": "Director, North America AI Forward Deployed Engineering",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Texas-USA/Director--Forward-Deployed-Engineering_JR112884"
+ },
+ "workday:genesys:/job/Utah-USA/Director--Product-Support---US-West_JR112744": {
+  "company": "Genesys",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "4 Locations",
+  "pay": "$143K\u2013$252K",
+  "tier": 0,
+  "title": "Director, Product Support - US West",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Utah-USA/Director--Product-Support---US-West_JR112744"
+ },
+ "workday:paloaltonetworks:/job/Austin-United-States-of-America/Director--Business-Value-Consulting_JR-023513": {
+  "company": "Chronosphere",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Austin, United States of America",
+  "pay": "$270K\u2013$315K",
+  "tier": 2,
+  "title": "Director, Business Value Consulting",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Austin-United-States-of-America/Director--Business-Value-Consulting_JR-023513"
+ },
+ "workday:paloaltonetworks:/job/Denver-United-States-of-America/Director--Business-Strategy-Consulting_JR-021011": {
+  "company": "Chronosphere",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Denver, United States of America",
+  "pay": "$270K\u2013$315K",
+  "tier": 0,
+  "title": "Director, Business Value Consulting",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Denver-United-States-of-America/Director--Business-Strategy-Consulting_JR-021011"
+ },
+ "workday:paloaltonetworks:/job/Office---Australia---Melbourne/Senior-Director--Technical-Services--Cloud-and-Cortex-_JR-020523-1": {
+  "company": "Chronosphere",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Office - Australia - Melbourne",
+  "pay": "",
+  "tier": 3,
+  "title": "Senior Director, Technical Services (Cloud and Cortex)",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Office---Australia---Melbourne/Senior-Director--Technical-Services--Cloud-and-Cortex-_JR-020523-1"
+ },
+ "workday:paloaltonetworks:/job/Office---Japan---Tokyo/Senior-Principal-Business-Value-Consultant_3128026": {
+  "company": "Chronosphere",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Office - Japan - Tokyo",
+  "pay": "",
+  "tier": 3,
+  "title": "Director - Business Value Consultant",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Office---Japan---Tokyo/Senior-Principal-Business-Value-Consultant_3128026"
+ },
+ "workday:paloaltonetworks:/job/Office---Singapore---Singapore/Senior-Director--Technical-Services--Cloud-and-Cortex-_JR-020310": {
+  "company": "Chronosphere",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Office - Singapore - Singapore",
+  "pay": "",
+  "tier": 3,
+  "title": "Senior Director, Technical Services (Cloud and Cortex)",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Office---Singapore---Singapore/Senior-Director--Technical-Services--Cloud-and-Cortex-_JR-020310"
+ },
+ "workday:paloaltonetworks:/job/Seattle-United-States-of-America/Director-Solutions-Consulting_JR-024133": {
+  "company": "Chronosphere",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "4 Locations",
+  "pay": "$330K\u2013$385K",
+  "tier": 2,
+  "title": "Director Solutions Consulting",
+  "url": "https://paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers/job/Seattle-United-States-of-America/Director-Solutions-Consulting_JR-024133"
+ },
+ "workday:vantagedc:/job/Remote---TX/Senior-Director--Solutions-Engineering--NA_R18547": {
+  "company": "Vantage Data Centers",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Remote - TX",
+  "pay": "",
+  "tier": 0,
+  "title": "Director, Solutions Engineering, NA",
+  "url": "https://vantagedc.wd1.myworkdayjobs.com/Vantage/job/Remote---TX/Senior-Director--Solutions-Engineering--NA_R18547"
+ },
+ "workday:zendesk:/job/Madison-Wisconsin-United-States-of-America/Senior-Director--Technical-Support_R35756": {
+  "company": "Zendesk",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "2 Locations",
+  "pay": "$174K\u2013$260K",
+  "tier": 2,
+  "title": "Senior Director, Technical Support",
+  "url": "https://zendesk.wd1.myworkdayjobs.com/zendesk/job/Madison-Wisconsin-United-States-of-America/Senior-Director--Technical-Support_R35756"
  }
 }
