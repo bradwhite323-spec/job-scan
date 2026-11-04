@@ -281,6 +281,8 @@ SNIFF_PATTERNS = [
     ("workable", r"apply\.workable\.com/([a-z0-9_-]+)"),
     ("recruitee", r"([a-z0-9-]+)\.recruitee\.com"),
     ("workday", r"(https?://[a-z0-9-]+\.wd\d+\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?[A-Za-z0-9_-]+)"),
+    ("gem", r"jobs\.gem\.com/([a-z0-9_-]+)"),
+    ("rippling", r"ats\.rippling\.com/([a-z0-9_-]+)"),
 ]
 # Recognized but not readable yet; reported so we know what each company uses.
 UNSUPPORTED = {"icims": r"icims\.com", "eightfold": r"eightfold\.ai", "jobvite": r"jobvite\.com",
@@ -906,6 +908,17 @@ def probe(args):
         "workable": "https://apply.workable.com/api/v1/widget/accounts/{s}",
     }
     for slug in args.slugs:
+        if slug.startswith("sniff:"):
+            found, unsupported = sniff_careers(slug[6:])
+            print(f"SNIFF {slug[6:]} -> {found} unsupported={unsupported}")
+            continue
+        if slug.startswith("http"):
+            try:
+                r = _session.get(slug, timeout=TIMEOUT)
+                print(f"URL {slug} -> {r.status_code}  {r.text[:400]}".replace("\n", " "))
+            except Exception as e:  # noqa: BLE001
+                print(f"URL {slug} -> ERR {type(e).__name__}: {e}")
+            continue
         for ats, u in urls.items():
             url = u.format(s=slug)
             try:
