@@ -1,0 +1,47 @@
+# Title filter. A posting matches when its title has a leadership word
+# AND one of a family's function phrases, and no exclusion.
+# Patterns are regular expressions matched against a normalized title:
+# lowercase, "&" -> "and", "sr." -> "senior", "pre-sales" -> "presales",
+# punctuation turned into spaces.
+
+leadership: '\b(director|head)\b'
+include_vp: false          # set true to also match "VP of ..." roles
+
+exclude:
+  - '\b(associate|assistant|deputy) director\b'
+  - '\b(intern|internship)\b'
+  - '\bit support\b'
+  - '\bdesktop\b'
+  - '\bclinical\b'
+  - '\bsales support\b'
+
+families:
+  Solution Consulting:
+    - '\bsolutions? consult'           # consulting / consultant(s)
+    - '\bpresales\b'
+    - '\bsolutions? engineer'
+    - '\bsales engineer'
+    - '\bsolutions? architect'
+    - '\btechnical sales\b'
+    - '\bcustomer engineer'
+    - '\bfield engineer'
+    - '\bvalue (engineer|consult)'
+    - '\bbusiness value\b'
+
+  Product Support:
+    - '\bproduct support\b'
+    - '\btechnical support\b'
+    - '\bcustomer support\b'
+    - '\bglobal support\b'
+    - '\bsupport (services|operations|engineering)\b'
+    - '\b(director|head)( of)? support\b'
+    - '\btechnical services\b'
+    - '\bcustomer care\b'
+    - '\bescalation'
+    - '\b(enterprise|premier) support\b'
+    - '\bcustomer experience\b'
+
+  Forward Deployed:
+    - '\bforward deployed\b'
+    - '\bdeploy(ed|ment) engineer'
+    - '\bsolutions and deployment\b'

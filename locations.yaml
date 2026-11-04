@@ -1,0 +1,32 @@
+# Location preferences. Each matching role is sorted into the first tier
+# it fits; the digest lists tiers in this order. Patterns are regular
+# expressions matched against the lowercased location text.
+
+tiers:
+  - name: Remote (US) or Colorado
+    remote_us: true            # remote roles open to the US qualify
+    places:
+      - '\bdenver\b'
+      - '\bboulder\b'
+      - '\bcolorado\b'
+      - ',\s*co\b'
+      - '\b(broomfield|englewood|lakewood|golden|louisville|fort collins|colorado springs)\b'
+
+  - name: San Francisco or New York
+    places:
+      - '\bsan francisco\b'
+      - '\bsf\b'
+      - '\bbay area\b'
+      - '\b(oakland|palo alto|menlo park|mountain view|san mateo|redwood city|sunnyvale|south san francisco)\b'
+      - '\bnew york\b'
+      - '\bnyc\b'
+      - '\b(brooklyn|manhattan)\b'
+
+  - name: Relocation (other US)
+    other_us: true
+
+  - name: Relocation (outside US)
+    outside_us: true
+
+# Set to false to drop roles outside the US from the digest entirely.
+show_outside_us: true

@@ -1,0 +1,46 @@
+name: Job watch
+
+on:
+  schedule:
+    # GitHub schedules run in UTC: 13:43 UTC = 6:43am Denver in winter, 7:43am in summer.
+    - cron: "43 13 * * *"
+  workflow_dispatch:
+    inputs:
+      rediscover:
+        description: "Re-find every company's job board"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # lets the run save what it has seen back to the repo
+
+concurrency: job-watch
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Check job boards
+        run: python watch.py run ${{ inputs.rediscover == true && '--rediscover' || '' }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          POST_WHEN_EMPTY: ${{ vars.POST_WHEN_EMPTY || 'true' }}
+
+      - name: Save state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || git commit -m "Job watch state $(date -u +%F)"
+          git pull --rebase
+          git push
