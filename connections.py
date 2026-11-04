@@ -3,7 +3,7 @@
 The export is personal data about other people, so it is never committed. It is read from:
   1. the path in CONNECTIONS_CSV, or
   2. the CONNECTIONS_B64 env var (gzip + base64 of the CSV, stored as a GitHub Actions secret).
-Build the secret value with:  python connections.py pack Connections.csv
+Build the secret value with:  python connections.py pack Connections.csv [part2.csv ...]
 """
 from __future__ import annotations
 
@@ -103,23 +103,26 @@ def slack_line(people: list[dict], limit: int = 3) -> str:
     return "    :busts_in_silhouette: You know: " + "; ".join(shown) + more
 
 
-def pack(path: str) -> str:
-    """Slim the export to the fields we use, then gzip+base64 it for a GitHub secret."""
-    text = Path(path).read_text(encoding="utf-8-sig")
-    lines = text.splitlines()
-    start = next((i for i, l in enumerate(lines) if l.startswith("First Name,")), 0)
+def pack(*paths: str) -> str:
+    """Slim one or more export files to the fields we use, then gzip+base64 for a GitHub secret."""
     buf = io.StringIO()
     w = csv.writer(buf)
     w.writerow(["First Name", "Last Name", "URL", "Company", "Position"])
-    for r in csv.DictReader(io.StringIO("\n".join(lines[start:]))):
-        if (r.get("Company") or "").strip():
-            w.writerow([r.get(k, "") for k in ("First Name", "Last Name", "URL", "Company", "Position")])
+    seen = set()
+    for path in paths:
+        lines = Path(path).read_text(encoding="utf-8-sig").splitlines()
+        start = next((i for i, l in enumerate(lines) if l.startswith("First Name,")), 0)
+        for r in csv.DictReader(io.StringIO("\n".join(lines[start:]))):
+            key = r.get("URL") or (r.get("First Name"), r.get("Last Name"), r.get("Company"))
+            if (r.get("Company") or "").strip() and key not in seen:
+                seen.add(key)
+                w.writerow([r.get(k, "") for k in ("First Name", "Last Name", "URL", "Company", "Position")])
     return base64.b64encode(gzip.compress(buf.getvalue().encode(), 9)).decode()
 
 
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "pack":
-        blob = "".join(pack(p) for p in sys.argv[2:3])
+        blob = pack(*sys.argv[2:])
         print(blob)
         print(f"\n{len(blob)} bytes (GitHub secrets max 48 KB)", file=sys.stderr)
     else:

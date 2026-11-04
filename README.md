@@ -99,7 +99,7 @@ it lives in the `CONNECTIONS_B64` Actions secret, and the saved `state/latest.md
 
 To refresh (monthly is plenty):
 
-    python connections.py pack Connections.csv | head -1 | gh secret set CONNECTIONS_B64
+    python connections.py pack Connections.csv [more parts...] | head -1 | gh secret set CONNECTIONS_B64
 
 If a connection's company is spelled differently from your list (e.g. after a rebrand), add it to
 that company's `aliases:` in `companies.yaml`.
