@@ -950,6 +950,15 @@ def probe(args):
             found, unsupported = sniff_careers(slug[6:])
             print(f"SNIFF {slug[6:]} -> {found} unsupported={unsupported}")
             continue
+        if slug.startswith("html:"):
+            try:
+                r = requests.get(slug[5:], timeout=TIMEOUT, headers={"User-Agent": "Mozilla/5.0"})
+                t = r.text
+                hits = re.findall(r'.{60}(?:"title"|jobPosts|job_post|absolute_url).{140}', t)[:4]
+                print(f"HTML {slug[5:]} -> {r.status_code} len={len(t)} hits={hits}")
+            except Exception as e:  # noqa: BLE001
+                print(f"HTML {slug[5:]} -> ERR {type(e).__name__}: {e}")
+            continue
         if slug.startswith("keys:"):
             try:
                 d = _session.get(slug[5:], timeout=TIMEOUT).json()
