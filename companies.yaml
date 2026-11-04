@@ -39,9 +39,9 @@ Conversational AI and CX:
   - {name: Genesys, slugs: [genesys]}
   - {name: Sierra, slugs: [sierra]}
   - {name: Decagon, slugs: [decagon]}
-  - {name: Intercom, slugs: [intercom]}
+  - {name: Intercom, board: {ats: greenhouse, slug: intercom}}  # board is titled "Fin"
   - {name: Gong, slugs: [gongio, gong]}
-  - {name: Talkdesk, slugs: [talkdesk]}
+  - {name: Talkdesk, slugs: [talkdesk2, talkdesk]}
   - {name: ASAPP, slugs: [asapp]}
   - {name: Observe.AI, slugs: [observeai]}
   - {name: Ada, slugs: [ada18, ada]}

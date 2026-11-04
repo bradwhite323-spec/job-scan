@@ -224,3 +224,13 @@ def test_digest_formatting():
     text = watch.build_digest([m], [], ["Netflix"], [], 150, False, "Wed Nov 4", True)
     assert "1 new match*" in text and "A&amp;B" in text and "&lt;Support&gt;" in text
     assert "Not covered yet (1)" in text
+
+
+def test_discover_marks_temporary_errors_for_retry(monkeypatch):
+    def limited(slug):
+        raise watch.requests.HTTPError("429 Too Many Requests")
+    monkeypatch.setattr(watch, "READERS", {"greenhouse": limited})
+    e = watch.discover({"name": "Hebbia"})
+    assert e["ats"] is None and "error" in e
+    assert watch.needs_discovery({"name": "Hebbia"}, e) is True
+    assert watch.needs_discovery({"name": "Hebbia"}, {"ats": None, "tried": watch.dt.date.today().isoformat()}) is False

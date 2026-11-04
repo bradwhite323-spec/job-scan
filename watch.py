@@ -34,6 +34,7 @@ SWEEP_FILE = STATE_DIR / "sweep_inbox.json"
 TZ = ZoneInfo(os.environ.get("JOBWATCH_TZ", "America/Denver"))
 REDISCOVER_AFTER_DAYS = 7
 WORKERS = 8
+DISCOVERY_WORKERS = 3   # gentler: discovery sends many lookups at once
 TIMEOUT = 20
 
 _session = requests.Session()
@@ -49,20 +50,22 @@ class NotFound(Exception):
     pass
 
 
-def fetch_json(url: str, method: str = "GET", body: dict | None = None):
-    """GET/POST JSON with one retry. Raises NotFound on 404."""
-    for attempt in range(2):
+def fetch_json(url: str, method: str = "GET", body: dict | None = None, tries: int = 4):
+    """GET/POST JSON, backing off on rate limits and server errors. Raises NotFound on 404."""
+    for attempt in range(tries):
+        last = attempt == tries - 1
         try:
             r = _session.request(method, url, json=body, timeout=TIMEOUT)
         except requests.RequestException:
-            if attempt:
+            if last:
                 raise
-            time.sleep(2)
+            time.sleep(2 * (attempt + 1))
             continue
         if r.status_code == 404:
             raise NotFound(url)
-        if r.status_code in (429, 500, 502, 503, 504) and not attempt:
-            time.sleep(5)
+        if r.status_code in (429, 500, 502, 503, 504) and not last:
+            wait = r.headers.get("Retry-After", "")
+            time.sleep(min(int(wait), 60) if wait.isdigit() else 5 * (attempt + 1))
             continue
         r.raise_for_status()
         return r.json()
@@ -482,12 +485,15 @@ def name_matches(company: str, board_name: str | None) -> bool:
 def discover(company: dict) -> dict:
     """Find a company's board. Returns a boards.json entry."""
     today = dt.date.today().isoformat()
-    fallback = None
+    fallback, error = None, None
     for slug in slug_candidates(company):
         for ats, reader in READERS.items():
             try:
                 jobs, board_name = reader(slug)
-            except Exception:
+            except NotFound:
+                continue
+            except Exception as e:  # noqa: BLE001 - rate limits, timeouts: retry next run
+                error = f"{ats}:{slug} {type(e).__name__}"
                 continue
             if not jobs:
                 continue
@@ -496,7 +502,12 @@ def discover(company: dict) -> dict:
             if name_matches(company["name"], board_name):
                 return entry
             fallback = fallback or {**entry, "name_mismatch": True}
-    return fallback or {"ats": None, "tried": today}
+    if fallback:
+        return fallback
+    entry = {"ats": None, "tried": today}
+    if error:
+        entry["error"] = error  # a lookup failed for a temporary reason, so retry tomorrow
+    return entry
 
 
 def needs_discovery(company, entry, force=False) -> bool:
@@ -506,7 +517,9 @@ def needs_discovery(company, entry, force=False) -> bool:
         return True
     if entry.get("ats"):
         return bool(entry.get("broken"))
-    tried = dt.date.fromisoformat(entry.get("tried", "1970-01-01"))
+    if entry.get("error"):
+        return True
+    tried =dt.date.fromisoformat(entry.get("tried", "1970-01-01"))
     return (dt.date.today() - tried).days >= REDISCOVER_AFTER_DAYS
 
 
@@ -651,10 +664,11 @@ def run(args):
     todo = [c for c in companies if needs_discovery(c, boards.get(c["name"]), args.rediscover)]
     if todo:
         print(f"Discovering boards for {len(todo)} companies...")
-        with ThreadPoolExecutor(WORKERS) as pool:
+        with ThreadPoolExecutor(DISCOVERY_WORKERS) as pool:
             for c, entry in zip(todo, pool.map(discover, todo)):
                 boards[c["name"]] = entry
-                print(f"  {c['name']}: {entry.get('ats') or 'not found'} {entry.get('slug', '')}")
+                note = f" (will retry: {entry['error']})" if entry.get("error") else ""
+                print(f"  {c['name']}: {entry.get('ats') or 'not found'} {entry.get('slug', '')}{note}")
 
     # 2. Read every placed board.
     targets = [(c, board_for(c, boards)) for c in companies]
