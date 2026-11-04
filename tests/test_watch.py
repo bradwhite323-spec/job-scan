@@ -261,3 +261,23 @@ def test_discover_uses_careers_page(monkeypatch):
     monkeypatch.setattr(watch, "sniff_careers", lambda url: ([("greenhouse", "acmeinc")], None))
     e = watch.discover({"name": "Acme", "careers": "https://acme.com/careers"})
     assert e["ats"] == "greenhouse" and e["slug"] == "acmeinc" and e["via"] == "careers page"
+
+
+def test_gem_and_rippling_parse(monkeypatch):
+    monkeypatch.setattr(watch, "fetch_json", lambda url, *a, **k: [
+        {"id": "4003629005", "title": "Director, Solutions Engineering", "absolute_url": "https://jobs.gem.com/acme/1",
+         "location": {"name": "San Francisco, United States"}, "location_type": "hybrid",
+         "departments": [{"name": "Sales"}], "first_published_at": "2026-10-01", "content_plain": "Pay $200,000 - $250,000"}])
+    jobs, _ = watch.read_gem("acme")
+    assert jobs[0]["id"] == "gem:acme:4003629005" and jobs[0]["department"] == "Sales"
+    assert watch.extract_pay(jobs[0]["_src"]) == "$200K–$250K"
+
+    pages = {0: {"items": [{"id": "a", "name": "Head of Support", "url": "https://ats.rippling.com/acme/jobs/a",
+                            "department": {"name": "Support"}, "locations": [{"name": "Remote (United States)"}]}],
+                 "totalPages": 2},
+             1: {"items": [{"id": "b", "name": "Engineer", "url": "u", "department": {}, "locations": ["Denver, CO"]}],
+                 "totalPages": 2}}
+    monkeypatch.setattr(watch, "fetch_json", lambda url, *a, **k: pages[int(url.split("page=")[1].split("&")[0])])
+    jobs, _ = watch.read_rippling("acme")
+    assert [j["title"] for j in jobs] == ["Head of Support", "Engineer"]
+    assert jobs[0]["_src"]["workplace"] == "Remote" and jobs[1]["location"] == "Denver, CO"

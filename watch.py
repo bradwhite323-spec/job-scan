@@ -224,6 +224,43 @@ def read_workday(careers_url):
     return jobs, None
 
 
+def read_gem(slug):
+    data = fetch_json(f"https://api.gem.com/job_board/v0/{slug}/job_posts/")
+    if not isinstance(data, list):
+        raise NotFound(slug)
+    jobs = []
+    for j in data:
+        depts = j.get("departments") or [{}]
+        jobs.append(_job("gem", slug, j.get("id"), j.get("title"), (j.get("location") or {}).get("name"),
+                         depts[0].get("name"), j.get("absolute_url"), j.get("first_published_at"),
+                         workplace=j.get("location_type"), text=j.get("content_plain") or "",
+                         has_detail=True))
+    return jobs, None
+
+
+def _loc_name(loc):
+    if isinstance(loc, dict):
+        return loc.get("name") or ", ".join(filter(None, (loc.get("city"), loc.get("state"), loc.get("country"))))
+    return str(loc or "")
+
+
+def read_rippling(slug):
+    jobs, page = [], 0
+    while page < 50:
+        data = fetch_json(f"https://ats.rippling.com/api/v2/board/{slug}/jobs?page={page}&pageSize=50")
+        for j in data.get("items") or []:
+            dept = j.get("department") or {}
+            locs = [_loc_name(x) for x in j.get("locations") or []]
+            workplace = "Remote" if any("remote" in x.lower() for x in locs) else None
+            jobs.append(_job("rippling", slug, j.get("id"), j.get("name"), "; ".join(filter(None, locs)),
+                             dept.get("name") if isinstance(dept, dict) else str(dept),
+                             j.get("url"), "", workplace=workplace))
+        page += 1
+        if page >= (data.get("totalPages") or 0):
+            break
+    return jobs, None
+
+
 def read_lever_eu(slug):
     return read_lever(slug, host="api.eu.lever.co")
 
@@ -268,6 +305,7 @@ READERS = {
 
 # Platforms found by reading a careers page (not guessed from the company name).
 EXTRA_READERS = {"levereu": read_lever_eu, "eightfold": read_eightfold,
+                 "gem": read_gem, "rippling": read_rippling,
                  "workday": lambda url: read_workday(url)}
 
 # Careers-page patterns: (platform, regex capturing the board name or URL)
@@ -287,8 +325,8 @@ SNIFF_PATTERNS = [
 # Recognized but not readable yet; reported so we know what each company uses.
 UNSUPPORTED = {"icims": r"icims\.com", "eightfold": r"eightfold\.ai", "jobvite": r"jobvite\.com",
                "oracle": r"oraclecloud\.com|taleo\.net", "successfactors": r"successfactors|jobs\.sap\.com",
-               "rippling": r"ats\.rippling\.com", "bamboohr": r"bamboohr\.com/careers",
-               "gem": r"jobs\.gem\.com", "pinpoint": r"pinpointhq\.com", "teamtailor": r"teamtailor\.com",
+               "bamboohr": r"bamboohr\.com/careers",
+               "pinpoint": r"pinpointhq\.com", "teamtailor": r"teamtailor\.com",
                "phenom": r"phenom|phenompeople", "avature": r"avature\.net", "dover": r"app\.dover\.com"}
 _SKIP_SLUGS = {"embed", "js", "jobs", "v1", "api", "static", "assets", "images", "css", "careers", "job_board"}
 
