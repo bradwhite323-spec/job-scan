@@ -1,2 +1,6 @@
 __pycache__/
 .pytest_cache/
+
+# LinkedIn export: personal data, never commit
+Connections*.csv
+*.connections.csv

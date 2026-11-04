@@ -87,3 +87,19 @@ python -m pytest tests           # tests
   that aren't covered yet.
 - A board that errors is flagged in that day's digest. Its roles aren't
   marked closed until it reads cleanly again.
+
+## Who you know there
+
+Each role in the Slack digest can list your LinkedIn connections at that company, senior and
+customer-facing people first. The data comes from LinkedIn's own export (Settings → Data privacy →
+Get a copy of your data → Connections), not from scraping.
+
+The export is personal data about other people and this repo is public, so it is never committed:
+it lives in the `CONNECTIONS_B64` Actions secret, and the saved `state/latest.md` omits contacts.
+
+To refresh (monthly is plenty):
+
+    python connections.py pack Connections.csv | head -1 | gh secret set CONNECTIONS_B64
+
+If a connection's company is spelled differently from your list (e.g. after a rebrand), add it to
+that company's `aliases:` in `companies.yaml`.

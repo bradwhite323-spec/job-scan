@@ -294,3 +294,38 @@ def test_sweep_keeps_uncovered_list_companies(tmp_path, monkeypatch):
 
 def test_no_guess():
     assert watch.slug_candidates({"name": "Seismic", "no_guess": True}) == []
+
+
+def test_connections_match_and_digest():
+    import connections
+    csv_text = (
+        "Notes:\n\"export note\"\n\n"
+        "First Name,Last Name,URL,Email Address,Company,Position,Connected On\n"
+        "Ann,Lee,https://www.linkedin.com/in/ann,,Gong.io Inc.,VP Customer Support,01 Jan 2026\n"
+        "Bo,Ray,https://www.linkedin.com/in/bo,,Gong,Account Executive,01 Jan 2026\n"
+        "Cy,Dee,https://www.linkedin.com/in/cy,,Sana,Director,01 Jan 2026\n"
+        "Di,Fox,https://www.linkedin.com/in/di,,ERGO NEXT Insurance,Head of CX,01 Jan 2026\n"
+    )
+    people = connections.parse(csv_text)
+    cos = [{"name": "Gong", "aliases": ["Gong.io"]}, {"name": "Asana"},
+           {"name": "Next Insurance", "aliases": ["ERGO NEXT Insurance"]}]
+    idx = connections.index(people, cos)
+    assert [p["name"] for p in idx["Gong"]] == ["Ann Lee", "Bo Ray"]   # senior + relevant first
+    assert "Asana" not in idx                                          # no substring false positives
+    assert idx["Next Insurance"][0]["name"] == "Di Fox"
+    role = {"url": "https://x", "title": "Director, Support", "company": "Gong", "family": "Product Support"}
+    with_c = watch.build_digest([role], [], [], [], 1, False, "Mon", False, contacts=idx)
+    assert "Ann Lee" in with_c
+    assert "Ann Lee" not in watch.build_digest([role], [], [], [], 1, False, "Mon", False)
+
+
+def test_connections_pack_roundtrip(tmp_path, monkeypatch):
+    import connections
+    f = tmp_path / "c.csv"
+    f.write_text("First Name,Last Name,URL,Email Address,Company,Position,Connected On\n"
+                 "Ann,Lee,https://l/ann,a@b.c,Gong,VP,01 Jan 2026\n")
+    blob = connections.pack(str(f))
+    monkeypatch.delenv("CONNECTIONS_CSV", raising=False)
+    monkeypatch.setenv("CONNECTIONS_B64", blob)
+    people = connections.load()
+    assert people[0]["company"] == "Gong" and "a@b.c" not in str(people)   # email dropped

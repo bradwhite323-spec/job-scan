@@ -34,6 +34,7 @@ jobs:
         run: python watch.py run ${{ inputs.rediscover == true && '--rediscover' || '' }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          CONNECTIONS_B64: ${{ secrets.CONNECTIONS_B64 }}
           POST_WHEN_EMPTY: ${{ vars.POST_WHEN_EMPTY || 'true' }}
 
       - name: Save state

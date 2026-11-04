@@ -217,7 +217,7 @@ Insurance and insurtech:
   - {name: Openly, slugs: [openly]}
   - {name: Kin Insurance, slugs: [kininsurance, kin]}
   - {name: Lemonade, slugs: [lemonade]}
-  - {name: Next Insurance, slugs: [nextinsurance], careers: 'https://www.nextinsurance.com/careers/'}
+  - {name: Next Insurance, aliases: [ERGO NEXT Insurance, ERGO NEXT], slugs: [nextinsurance], careers: 'https://www.nextinsurance.com/careers/'}
   - {name: Clearcover, slugs: [clearcover], careers: 'https://clearcover.com/careers/'}
   - {name: Root Insurance, slugs: [rootinsurance, root], careers: 'https://www.joinroot.com/careers/'}
   - {name: Hippo, slugs: [hippo], careers: 'https://www.hippo.com/careers'}

@@ -25,6 +25,8 @@ from zoneinfo import ZoneInfo
 import requests
 import yaml
 
+import connections
+
 ROOT = Path(__file__).resolve().parent
 STATE_DIR = ROOT / "state"
 BOARDS_FILE = STATE_DIR / "boards.json"
@@ -732,7 +734,7 @@ def _esc(s: str) -> str:
 FAMILY_TAGS = {"Solution Consulting": "SC", "Product Support": "Support", "Forward Deployed": "FDE"}
 
 
-def format_role(m: dict) -> str:
+def format_role(m: dict, contacts: dict | None = None) -> str:
     parts = [f"<{m['url']}|{_esc(m['title'])}>", _esc(m["company"])]
     where = _esc(m["location"])[:80] if m.get("location") else ""
     if m.get("workplace") and m["workplace"].lower() not in where.lower():
@@ -744,10 +746,14 @@ def format_role(m: dict) -> str:
     line = "• " + " · ".join(parts) + f"  `{FAMILY_TAGS.get(m.get('family'), m.get('family', ''))}`"
     for f in m.get("flags") or []:
         line += f"  :warning: {f}"
+    people = (contacts or {}).get(m["company"])
+    if people:
+        line += "\n" + connections.slack_line(people)
     return line
 
 
-def tier_sections(roles: list[dict], tier_names: list[str], show_outside_us: bool) -> list[str]:
+def tier_sections(roles: list[dict], tier_names: list[str], show_outside_us: bool,
+                  contacts: dict | None = None) -> list[str]:
     lines = []
     for i, name in enumerate(tier_names):
         group = [m for m in roles if m.get("tier", len(tier_names) - 1) == i]
@@ -757,12 +763,13 @@ def tier_sections(roles: list[dict], tier_names: list[str], show_outside_us: boo
             continue
         lines.append(f"\n*{name}* ({len(group)})")
         for m in sorted(group, key=lambda x: (x.get("family", ""), x["company"], x["title"])):
-            lines.append(format_role(m))
+            lines.append(format_role(m, contacts))
     return lines
 
 
 def build_digest(new, closed, uncovered, failed, checked, baseline, date_label, show_coverage,
-                 tier_names=("Matches",), show_outside_us=True, sweep=(), suggestions=()):
+                 tier_names=("Matches",), show_outside_us=True, sweep=(), suggestions=(),
+                 contacts=None):
     lines = []
     n = len(new)
     if baseline:
@@ -774,12 +781,12 @@ def build_digest(new, closed, uncovered, failed, checked, baseline, date_label, 
     else:
         lines.append(f"Job watch, {date_label}: no new matches on your list ({checked} boards checked)")
 
-    lines += tier_sections(new, list(tier_names), show_outside_us)
+    lines += tier_sections(new, list(tier_names), show_outside_us, contacts)
 
     if sweep:
         lines.append(f"\n*Weekly sweep: {len(sweep)} {'role' if len(sweep) == 1 else 'roles'} "
                      f"at companies not on your list*")
-        lines += tier_sections(sweep, list(tier_names), show_outside_us)
+        lines += tier_sections(sweep, list(tier_names), show_outside_us, contacts)
     if suggestions:
         lines.append("\n_Worth adding to your list (2+ open roles):_ " + ", ".join(
             _esc(s) for s in suggestions))
@@ -876,15 +883,26 @@ def run(args):
     uncovered_names = {c["name"] for c in companies if not board_for(c, boards)}
     sweep, suggestions = take_sweep(seen, companies, sorter, today.isoformat(), uncovered_names)
 
+    # People you know at each company, from your LinkedIn export (never saved to the repo).
+    people = connections.load()
+    known = {c["name"]: c for c in companies}
+    for r in sweep:
+        known.setdefault(r["company"], {"name": r["company"]})
+    contacts = connections.index(people, list(known.values())) if people else {}
+    if people:
+        print(f"Connections loaded: {len(people)}; at {len(contacts)} companies on the list or sweep.")
+
     tier_names = [t["name"] for t in loc_cfg["tiers"]]
-    text = build_digest(new, closed, uncovered, failed, len(ok), first_run,
-                        today.strftime("%a %b %-d"),
-                        show_coverage=first_run or today.weekday() == 0,
-                        tier_names=tier_names, show_outside_us=loc_cfg.get("show_outside_us", True),
-                        sweep=sweep, suggestions=suggestions)
+    digest = lambda contacts: build_digest(
+        new, closed, uncovered, failed, len(ok), first_run, today.strftime("%a %b %-d"),
+        show_coverage=first_run or today.weekday() == 0,
+        tier_names=tier_names, show_outside_us=loc_cfg.get("show_outside_us", True),
+        sweep=sweep, suggestions=suggestions, contacts=contacts)
+    text = digest(contacts)
     print("\n" + text)
+    # The saved report is committed to a public repo, so it never includes contacts.
     REPORT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_FILE.write_text(text + "\n")
+    REPORT_FILE.write_text(digest(None) + "\n")
 
     if args.dry_run:
         print("\n(dry run: nothing posted or saved)")
