@@ -15,17 +15,17 @@ AI labs, infrastructure and apps:
   - {name: C3 AI, slugs: [c3iot, c3ai]}
   - {name: Abridge, slugs: [abridge]}
   - {name: Cohere, slugs: [cohere]}
-  - {name: Mistral AI, slugs: [mistral]}
+  - {name: Mistral AI, slugs: [mistral], careers: 'https://mistral.ai/careers'}
   - {name: Perplexity, slugs: [perplexity, perplexityai]}
   - {name: Glean, slugs: [gleanwork, glean]}
   - {name: Harvey, slugs: [harvey]}
-  - {name: Hebbia, slugs: [hebbia]}
+  - {name: Hebbia, slugs: [hebbia], careers: 'https://www.hebbia.com/careers'}
   - {name: Writer, slugs: [writer]}
   - {name: ElevenLabs, slugs: [elevenlabs]}
   - {name: Runway, slugs: [runwayml, runway]}
   - {name: Hugging Face, slugs: [huggingface]}
   - {name: Together AI, slugs: [togetherai]}
-  - {name: Fireworks AI, slugs: [fireworksai]}
+  - {name: Fireworks AI, slugs: [fireworksai], careers: 'https://fireworks.ai/careers'}
   - {name: Baseten, slugs: [baseten]}
   - {name: Modal, slugs: [modal]}
   - {name: CoreWeave, slugs: [coreweave]}
@@ -36,16 +36,16 @@ AI labs, infrastructure and apps:
 Conversational AI and CX:
   - {name: Cresta, slugs: [cresta]}
   - {name: Pylon, slugs: [usepylon, pylon]}
-  - {name: Genesys, slugs: [genesys]}
+  - {name: Genesys, slugs: [genesys], careers: 'https://www.genesys.com/company/careers'}
   - {name: Sierra, slugs: [sierra]}
   - {name: Decagon, slugs: [decagon]}
   - {name: Intercom, board: {ats: greenhouse, slug: intercom}}  # board is titled "Fin"
   - {name: Gong, slugs: [gongio, gong]}
   - {name: Talkdesk, slugs: [talkdesk2, talkdesk]}
-  - {name: ASAPP, slugs: [asapp]}
+  - {name: ASAPP, slugs: [asapp], careers: 'https://www.asapp.com/careers'}
   - {name: Observe.AI, slugs: [observeai]}
   - {name: Ada, slugs: [ada18, ada]}
-  - {name: Zendesk, slugs: [zendesk]}
+  - {name: Zendesk, slugs: [zendesk], careers: 'https://jobs.zendesk.com'}
 
 Fintech and spend management:
   - {name: Stripe, slugs: [stripe]}
@@ -63,25 +63,25 @@ Fintech and spend management:
   - {name: Navan, slugs: [navan, tripactions]}
   - {name: Bill.com, slugs: [billcom, bill]}
   - {name: Modern Treasury, slugs: [moderntreasury]}
-  - {name: Marqeta, slugs: [marqeta]}
+  - {name: Marqeta, slugs: [marqeta], careers: 'https://www.marqeta.com/company/careers'}
   - {name: Affirm, slugs: [affirm]}
-  - {name: Tipalti, slugs: [tipalti]}
+  - {name: Tipalti, slugs: [tipalti], careers: 'https://tipalti.com/careers/'}
   - {name: Wealthfront, slugs: [wealthfront]}
   - {name: Robinhood, slugs: [robinhood]}
 
 HR, payroll and global employment:
-  - {name: Deel, slugs: [deel]}
-  - {name: Rippling, slugs: [rippling]}
+  - {name: Deel, slugs: [deel], careers: 'https://www.deel.com/careers'}
+  - {name: Rippling, slugs: [rippling], careers: 'https://www.rippling.com/careers'}
   - {name: Gusto, slugs: [gusto]}
   - {name: Justworks, slugs: [justworks]}
   - {name: Checkr, slugs: [checkr]}
   - {name: Remote, slugs: [remote, remotecom]}
   - {name: Oyster, slugs: [oysterhr, oyster]}
-  - {name: Papaya Global, slugs: [papayaglobal]}
+  - {name: Papaya Global, slugs: [papayaglobal], careers: 'https://www.papayaglobal.com/careers/'}
   - {name: Lattice, slugs: [lattice]}
   - {name: HiBob, slugs: [hibob]}
   - {name: BambooHR, slugs: [bamboohr]}
-  - {name: Paylocity, slugs: [paylocity]}
+  - {name: Paylocity, slugs: [paylocity], careers: 'https://www.paylocity.com/careers/'}
 
 Productivity and collaboration:
   - {name: Notion, slugs: [notion]}
@@ -97,11 +97,11 @@ Productivity and collaboration:
   - {name: Miro, slugs: [miro, realtimeboardglobal]}
   - {name: Airtable, slugs: [airtable]}
   - {name: ClickUp, slugs: [clickup]}
-  - {name: Monday.com, slugs: [mondaycom, monday]}
-  - {name: Atlassian, slugs: [atlassian]}
-  - {name: Superhuman (Grammarly), slugs: [grammarly, superhuman]}
-  - {name: Framer, slugs: [framer]}
-  - {name: Retool, slugs: [retool]}
+  - {name: Monday.com, slugs: [mondaycom, monday], careers: 'https://monday.com/careers'}
+  - {name: Atlassian, slugs: [atlassian], careers: 'https://www.atlassian.com/company/careers/all-jobs'}
+  - {name: Superhuman (Grammarly), slugs: [grammarly, superhuman], careers: 'https://www.grammarly.com/jobs'}
+  - {name: Framer, slugs: [framer], careers: 'https://www.framer.com/careers/'}
+  - {name: Retool, slugs: [retool], careers: 'https://retool.com/careers'}
   - {name: Zapier, slugs: [zapier]}
   - {name: Vercel, slugs: [vercel]}
   - {name: Supabase, slugs: [supabase]}
@@ -116,11 +116,11 @@ Data, observability and developer infrastructure:
   - {name: GitLab, slugs: [gitlab]}
   - {name: Dataiku, slugs: [dataiku]}
   - {name: Fivetran, slugs: [fivetran]}
-  - {name: dbt Labs, slugs: [dbtlabsinc, dbtlabs]}
-  - {name: Confluent, slugs: [confluent]}
+  - {name: dbt Labs, slugs: [dbtlabsinc, dbtlabs], careers: 'https://www.getdbt.com/careers'}
+  - {name: Confluent, slugs: [confluent], careers: 'https://careers.confluent.io'}
   - {name: MongoDB, slugs: [mongodb]}
   - {name: Grafana Labs, slugs: [grafanalabs]}
-  - {name: Chronosphere, slugs: [chronosphere]}
+  - {name: Chronosphere, slugs: [chronosphere], careers: 'https://chronosphere.io/careers/'}
   - {name: Sigma Computing, slugs: [sigmacomputing]}
   - {name: Hex, slugs: [hextechnologies, hex]}
   - {name: Starburst, slugs: [starburst]}
@@ -135,17 +135,17 @@ Security:
   - {name: Dragos, slugs: [dragos]}
   - {name: Okta, slugs: [okta]}
   - {name: Recorded Future, slugs: [recordedfuture]}
-  - {name: Pindrop, slugs: [pindrop]}
+  - {name: Pindrop, slugs: [pindrop], careers: 'https://www.pindrop.com/careers'}
   - {name: Patch My PC, slugs: [patchmypc]}
   - {name: Wiz, slugs: [wizinc, wiz]}
   - {name: Snyk, slugs: [snyk]}
   - {name: Drata, slugs: [drata]}
-  - {name: Arctic Wolf, slugs: [arcticwolf]}
+  - {name: Arctic Wolf, slugs: [arcticwolf], careers: 'https://arcticwolf.com/company/careers/'}
   - {name: Abnormal Security, slugs: [abnormalsecurity, abnormal]}
   - {name: 1Password, slugs: [1password, onepassword]}
   - {name: Tanium, slugs: [tanium]}
   - {name: Chainguard, slugs: [chainguard]}
-  - {name: Cyera, slugs: [cyera]}
+  - {name: Cyera, slugs: [cyera], careers: 'https://www.cyera.com/careers'}
   - {name: Island, slugs: [island]}
   - {name: Semgrep, slugs: [semgrep]}
   - {name: Axonius, slugs: [axonius]}
@@ -155,33 +155,33 @@ Security:
 
 Digital and mental health:
   - {name: Ro, slugs: [ro, roman]}
-  - {name: Hims & Hers, slugs: [hims, himsandhers]}
+  - {name: Hims & Hers, slugs: [hims, himsandhers], careers: 'https://www.hims.com/careers-professional'}
   - {name: GoodRx, slugs: [goodrx]}
   - {name: Headway, slugs: [headway]}
   - {name: Grow Therapy, slugs: [growtherapy]}
   - {name: LifeStance Health, slugs: [lifestance]}
-  - {name: Cityblock Health, slugs: [cityblock, cityblockhealth]}
+  - {name: Cityblock Health, slugs: [cityblock, cityblockhealth], careers: 'https://www.cityblock.com/careers'}
   - {name: Komodo Health, slugs: [komodohealth]}
   - {name: Oura, slugs: [oura, ouraring]}
-  - {name: Spring Health, slugs: [springhealth]}
+  - {name: Spring Health, slugs: [springhealth], careers: 'https://www.springhealth.com/careers'}
   - {name: Lyra Health, slugs: [lyrahealth]}
   - {name: Hinge Health, slugs: [hingehealth]}
   - {name: Omada Health, slugs: [omadahealth, omada]}
   - {name: Sword Health, slugs: [swordhealth]}
   - {name: Rula, slugs: [rula, rulahealth]}
-  - {name: Alma, slugs: [helloalma, alma]}
+  - {name: Alma, slugs: [helloalma, alma], careers: 'https://helloalma.com/careers/'}
   - {name: Devoted Health, slugs: [devotedhealth]}
   - {name: Included Health, slugs: [includedhealth]}
   - {name: Maven Clinic, slugs: [mavenclinic]}
   - {name: Zocdoc, slugs: [zocdoc]}
-  - {name: Function Health, slugs: [functionhealth]}
+  - {name: Function Health, slugs: [functionhealth], careers: 'https://www.functionhealth.com/careers'}
   - {name: Whoop, slugs: [whoop]}
 
 Healthcare AI:
   - {name: Ambience Healthcare, slugs: [ambiencehealthcare, ambience]}
   - {name: Suki, slugs: [sukiai, suki]}
   - {name: Commure, slugs: [commure]}
-  - {name: Tempus AI, slugs: [tempus]}
+  - {name: Tempus AI, slugs: [tempus], careers: 'https://www.tempus.com/careers/'}
 
 Biotech and AI drug discovery:
   - {name: Recursion, slugs: [recursionpharmaceuticals, recursion]}
@@ -190,45 +190,45 @@ Biotech and AI drug discovery:
   - {name: Isomorphic Labs, slugs: [isomorphiclabs]}
   - {name: Xaira Therapeutics, slugs: [xairatherapeutics, xaira]}
   - {name: Generate Biomedicines, slugs: [generatebiomedicines]}
-  - {name: Insilico Medicine, slugs: [insilicomedicine]}
+  - {name: Insilico Medicine, slugs: [insilicomedicine], careers: 'https://insilico.com/careers'}
   - {name: Absci, slugs: [absci]}
-  - {name: Schrodinger, slugs: [schrodinger]}
+  - {name: Schrodinger, slugs: [schrodinger], careers: 'https://www.schrodinger.com/careers/'}
 
 Defense and government tech:
   - {name: Palantir, slugs: [palantir]}
-  - {name: Peraton, slugs: [peraton]}
+  - {name: Peraton, slugs: [peraton], careers: 'https://careers.peraton.com'}
   - {name: Anduril, slugs: [andurilindustries, anduril]}
   - {name: Shield AI, slugs: [shieldai]}
   - {name: Saronic, slugs: [saronic]}
   - {name: Govini, slugs: [govini]}
-  - {name: Applied Intuition, slugs: [appliedintuition]}
-  - {name: Hadrian, slugs: [hadrian, hadrianautomation]}
+  - {name: Applied Intuition, slugs: [appliedintuition], careers: 'https://www.appliedintuition.com/careers'}
+  - {name: Hadrian, slugs: [hadrian, hadrianautomation], careers: 'https://www.hadrian.co/careers'}
   - {name: Vannevar Labs, slugs: [vannevarlabs]}
   - {name: Second Front Systems, slugs: [secondfront, secondfrontsystems]}
-  - {name: Booz Allen Hamilton, slugs: [boozallen]}
-  - {name: Leidos, slugs: [leidos]}
+  - {name: Booz Allen Hamilton, slugs: [boozallen], careers: 'https://careers.boozallen.com'}
+  - {name: Leidos, slugs: [leidos], careers: 'https://careers.leidos.com'}
 
 Insurance and insurtech:
   - {name: Pie Insurance, slugs: [pieinsurance]}
-  - {name: CSAA Insurance Group, slugs: [csaa]}
+  - {name: CSAA Insurance Group, slugs: [csaa], careers: 'https://careers.csaa.com'}
   - {name: Coalition, slugs: [coalition]}
   - {name: Openly, slugs: [openly]}
   - {name: Kin Insurance, slugs: [kininsurance, kin]}
   - {name: Lemonade, slugs: [lemonade]}
-  - {name: Next Insurance, slugs: [nextinsurance]}
-  - {name: Clearcover, slugs: [clearcover]}
-  - {name: Root Insurance, slugs: [rootinsurance, root]}
-  - {name: Hippo, slugs: [hippo]}
+  - {name: Next Insurance, slugs: [nextinsurance], careers: 'https://www.nextinsurance.com/careers/'}
+  - {name: Clearcover, slugs: [clearcover], careers: 'https://clearcover.com/careers/'}
+  - {name: Root Insurance, slugs: [rootinsurance, root], careers: 'https://www.joinroot.com/careers/'}
+  - {name: Hippo, slugs: [hippo], careers: 'https://www.hippo.com/careers'}
 
 SMB and vertical SaaS:
   - {name: Toast, slugs: [toast]}
   - {name: Klaviyo, slugs: [klaviyo]}
-  - {name: EverCommerce, slugs: [evercommerce]}
+  - {name: EverCommerce, slugs: [evercommerce], careers: 'https://www.evercommerce.com/careers/'}
   - {name: ServiceTitan, slugs: [servicetitan]}
-  - {name: Procore, slugs: [procore]}
-  - {name: Shopify, slugs: [shopify]}
+  - {name: Procore, slugs: [ProcoreTechnologies, procore], careers: 'https://careers.procore.com'}
+  - {name: Shopify, slugs: [shopify], careers: 'https://www.shopify.com/careers'}
   - {name: Jobber, slugs: [jobber, getjobber]}
-  - {name: Housecall Pro, slugs: [housecallpro]}
+  - {name: Housecall Pro, slugs: [housecallpro], careers: 'https://www.housecallpro.com/careers/'}
   - {name: Owner.com, slugs: [owner, ownercom]}
   - {name: Attentive, slugs: [attentive]}
   - {name: Faire, slugs: [faire]}
@@ -241,28 +241,28 @@ Sales, go-to-market and market intelligence:
   - {name: Outreach, slugs: [outreach]}
   - {name: ZoomInfo, slugs: [zoominfo]}
   - {name: HubSpot, slugs: [hubspotjobs, hubspot]}
-  - {name: Common Room, slugs: [commonroom]}
+  - {name: Common Room, slugs: [commonroom], careers: 'https://www.commonroom.io/careers/'}
 
 Quantum:
   - {name: IonQ, slugs: [ionq]}
-  - {name: Quantinuum, slugs: [quantinuum]}
+  - {name: Quantinuum, slugs: [quantinuum], careers: 'https://www.quantinuum.com/careers'}
   - {name: PsiQuantum, slugs: [psiquantum]}
   - {name: Rigetti Computing, slugs: [rigetti]}
-  - {name: Infleqtion, slugs: [infleqtion]}
-  - {name: D-Wave, slugs: [dwave, dwavesys]}
+  - {name: Infleqtion, slugs: [infleqtion], careers: 'https://infleqtion.com/careers'}
+  - {name: D-Wave, slugs: [dwave, dwavesys], careers: 'https://www.dwavequantum.com/company/careers/'}
 
 Data centers, compute and telecom:
-  - {name: Vantage Data Centers, slugs: [vantagedatacenters]}
-  - {name: Calix, slugs: [calix]}
+  - {name: Vantage Data Centers, slugs: [vantagedatacenters], careers: 'https://vantage-dc.com/careers/'}
+  - {name: Calix, slugs: [calix], careers: 'https://www.calix.com/company/careers.html'}
   - {name: Aligned Data Centers, slugs: [aligneddatacenters, aligned]}
   - {name: QTS Data Centers, slugs: [qtsdatacenters, qts]}
   - {name: Crusoe, slugs: [crusoe, crusoeenergysystems]}
-  - {name: Switch, slugs: [switch]}
-  - {name: Ciena, slugs: [ciena]}
+  - {name: Switch, slugs: [switch], careers: 'https://www.switch.com/careers/'}
+  - {name: Ciena, slugs: [ciena], careers: 'https://careers.ciena.com'}
 
 Education and learning:
   - {name: 2U, slugs: [2u]}
-  - {name: Wiley, slugs: [wiley]}
+  - {name: Wiley, slugs: [wiley], careers: 'https://careers.wiley.com'}
   - {name: Coursera, slugs: [coursera]}
   - {name: Guild, slugs: [guild, guildeducation]}
   - {name: Handshake, slugs: [handshake]}
@@ -271,7 +271,7 @@ Education and learning:
 
 Consumer platforms:
   - {name: Reddit, slugs: [reddit]}
-  - {name: Netflix, slugs: [netflix]}
+  - {name: Netflix, eightfold: 'explore.jobs.netflix.net|netflix.com'}
   - {name: Ibotta, slugs: [ibotta]}
   - {name: Discord, slugs: [discord]}
   - {name: Pinterest, slugs: [pinterest]}

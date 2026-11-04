@@ -15,6 +15,7 @@
  },
  "ASAPP": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Abnormal Security": {
@@ -82,6 +83,7 @@
  },
  "Alma": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "AlphaSense": {
@@ -128,10 +130,12 @@
  },
  "Applied Intuition": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Arctic Wolf": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Asana": {
@@ -150,6 +154,7 @@
  },
  "Atlassian": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Attentive": {
@@ -196,6 +201,7 @@
  },
  "Booz Allen Hamilton": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Brex": {
@@ -214,7 +220,7 @@
  },
  "CSAA Insurance Group": {
   "ats": null,
-  "error": "workable:csaa-insurance-group HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Calendly": {
@@ -226,7 +232,7 @@
  },
  "Calix": {
   "ats": null,
-  "error": "workable:calix HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Canva": {
@@ -266,15 +272,17 @@
  },
  "Chronosphere": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Ciena": {
   "ats": null,
-  "error": "workable:ciena HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Cityblock Health": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Clay": {
@@ -293,7 +301,7 @@
  },
  "Clearcover": {
   "ats": null,
-  "error": "workable:clearcover HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "ClickHouse": {
@@ -340,7 +348,7 @@
  },
  "Common Room": {
   "ats": null,
-  "error": "workable:common-room HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Commure": {
@@ -352,6 +360,7 @@
  },
  "Confluent": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "CoreWeave": {
@@ -391,11 +400,12 @@
  },
  "Cyera": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "D-Wave": {
   "ats": null,
-  "error": "workable:d-wave HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Databricks": {
@@ -428,6 +438,7 @@
  },
  "Deel": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Devoted Health": {
@@ -495,7 +506,7 @@
  },
  "EverCommerce": {
   "ats": null,
-  "error": "workable:evercommerce HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Expel": {
@@ -521,6 +532,7 @@
  },
  "Fireworks AI": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Fivetran": {
@@ -532,10 +544,12 @@
  },
  "Framer": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Function Health": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Generate Biomedicines": {
@@ -547,6 +561,7 @@
  },
  "Genesys": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "GitLab": {
@@ -614,6 +629,7 @@
  },
  "Hadrian": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Handshake": {
@@ -639,6 +655,7 @@
  },
  "Hebbia": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Hex": {
@@ -657,6 +674,7 @@
  },
  "Hims & Hers": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Hinge Health": {
@@ -668,12 +686,12 @@
  },
  "Hippo": {
   "ats": null,
-  "error": "workable:hippo HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Housecall Pro": {
   "ats": null,
-  "error": "workable:housecall-pro HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "HubSpot": {
@@ -714,11 +732,12 @@
  },
  "Infleqtion": {
   "ats": null,
-  "error": "workable:infleqtion HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Insilico Medicine": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Insitro": {
@@ -808,6 +827,7 @@
  },
  "Leidos": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Lemonade": {
@@ -840,6 +860,7 @@
  },
  "Marqeta": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Maven Clinic": {
@@ -865,6 +886,7 @@
  },
  "Mistral AI": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Modal": {
@@ -883,6 +905,7 @@
  },
  "Monday.com": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "MongoDB": {
@@ -908,12 +931,12 @@
  },
  "Netflix": {
   "ats": null,
-  "error": "workable:netflix HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Next Insurance": {
   "ats": null,
-  "error": "workable:next-insurance HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Notion": {
@@ -995,6 +1018,7 @@
  },
  "Papaya Global": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Patch My PC": {
@@ -1006,10 +1030,12 @@
  },
  "Paylocity": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Peraton": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Perplexity": {
@@ -1035,6 +1061,7 @@
  },
  "Pindrop": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Pinterest": {
@@ -1053,7 +1080,7 @@
  },
  "Procore": {
   "ats": null,
-  "error": "workable:procore HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "PsiQuantum": {
@@ -1079,7 +1106,7 @@
  },
  "Quantinuum": {
   "ats": null,
-  "error": "workable:quantinuum HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Ramp": {
@@ -1119,6 +1146,7 @@
  },
  "Retool": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Revolution Medicines": {
@@ -1144,6 +1172,7 @@
  },
  "Rippling": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Ro": {
@@ -1162,7 +1191,7 @@
  },
  "Root Insurance": {
   "ats": null,
-  "error": "workable:root-insurance HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Rula": {
@@ -1195,6 +1224,7 @@
  },
  "Schrodinger": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Second Front Systems": {
@@ -1227,7 +1257,7 @@
  },
  "Shopify": {
   "ats": null,
-  "error": "workable:shopify HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Sierra": {
@@ -1288,6 +1318,7 @@
  },
  "Spring Health": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Starburst": {
@@ -1327,11 +1358,12 @@
  },
  "Superhuman (Grammarly)": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Switch": {
   "ats": null,
-  "error": "workable:switch HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Sword Health": {
@@ -1364,10 +1396,12 @@
  },
  "Tempus AI": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Tipalti": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Toast": {
@@ -1400,7 +1434,7 @@
  },
  "Vantage Data Centers": {
   "ats": null,
-  "error": "workable:vantage-data-centers HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Vercel": {
@@ -1433,7 +1467,7 @@
  },
  "Wiley": {
   "ats": null,
-  "error": "workable:wiley HTTPError",
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Wiz": {
@@ -1473,6 +1507,7 @@
  },
  "Zendesk": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  },
  "Zocdoc": {
@@ -1491,6 +1526,7 @@
  },
  "dbt Labs": {
   "ats": null,
+  "error": "retry with careers page",
   "tried": "2026-11-04"
  }
 }

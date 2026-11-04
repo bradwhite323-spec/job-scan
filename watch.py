@@ -103,8 +103,8 @@ def read_greenhouse(slug):
     return jobs, name
 
 
-def read_lever(slug):
-    data = fetch_json(f"https://api.lever.co/v0/postings/{slug}?mode=json")
+def read_lever(slug, host="api.lever.co"):
+    data = fetch_json(f"https://{host}/v0/postings/{slug}?mode=json")
     if not isinstance(data, list):
         raise NotFound(slug)
     jobs = []
@@ -116,7 +116,7 @@ def read_lever(slug):
         locs = cat.get("allLocations") or []
         location = "; ".join(locs) if len(locs) > 1 else cat.get("location")
         text = " ".join(filter(None, [j.get("descriptionPlain"), j.get("additionalPlain")]))
-        jobs.append(_job("lever", slug, j.get("id"), j.get("text"), location,
+        jobs.append(_job("lever" if host == "api.lever.co" else "levereu", slug, j.get("id"), j.get("text"), location,
                          cat.get("department") or cat.get("team"), j.get("hostedUrl"), posted,
                          workplace=j.get("workplaceType"), salary=j.get("salaryRange"),
                          text=text, has_detail=True))
@@ -224,6 +224,39 @@ def read_workday(careers_url):
     return jobs, None
 
 
+def read_lever_eu(slug):
+    return read_lever(slug, host="api.eu.lever.co")
+
+
+def read_eightfold(spec):
+    """spec 'host|domain', e.g. 'explore.jobs.netflix.net|netflix.com'. Searches leadership words only."""
+    host, domain = spec.split("|", 1)
+    jobs, seen = [], set()
+    for query in ("director", "head"):
+        start = 0
+        while start < 500:
+            data = fetch_json(f"https://{host}/api/apply/v2/jobs?domain={domain}"
+                              f"&start={start}&num=50&query={query}")
+            positions = data.get("positions") or []
+            for j in positions:
+                if j.get("id") in seen:
+                    continue
+                seen.add(j.get("id"))
+                locs = j.get("locations") or [j.get("location")]
+                posted = j.get("t_create")
+                posted = (dt.datetime.fromtimestamp(posted, dt.timezone.utc).isoformat()
+                          if isinstance(posted, (int, float)) else "")
+                jobs.append(_job("eightfold", domain, j.get("id"), j.get("name"),
+                                 "; ".join(filter(None, locs)), j.get("department"),
+                                 j.get("canonicalPositionUrl") or f"https://{host}/careers/job/{j.get('id')}",
+                                 posted, workplace=j.get("work_location_option")))
+            start += len(positions)
+            if not positions or start >= (data.get("count") or 0):
+                break
+            time.sleep(0.5)
+    return jobs, None
+
+
 READERS = {
     "greenhouse": read_greenhouse,
     "ashby": read_ashby,
@@ -232,6 +265,75 @@ READERS = {
     "workable": read_workable,
     "recruitee": read_recruitee,
 }
+
+# Platforms found by reading a careers page (not guessed from the company name).
+EXTRA_READERS = {"levereu": read_lever_eu, "eightfold": read_eightfold,
+                 "workday": lambda url: read_workday(url)}
+
+# Careers-page patterns: (platform, regex capturing the board name or URL)
+SNIFF_PATTERNS = [
+    ("greenhouse", r"(?:job-)?boards(?:\.eu)?\.greenhouse\.io/(?:embed/job_board(?:/js)?\?for=)?([a-z0-9_-]+)"),
+    ("greenhouse", r"boards-api\.greenhouse\.io/v1/boards/([a-z0-9_-]+)"),
+    ("levereu", r"jobs\.eu\.lever\.co/([a-z0-9_.-]+)"),
+    ("lever", r"jobs\.lever\.co/([a-z0-9_.-]+)"),
+    ("ashby", r"jobs\.ashbyhq\.com/([A-Za-z0-9_.%-]+)"),
+    ("smartrecruiters", r"(?:jobs|careers)\.smartrecruiters\.com/([A-Za-z0-9_-]+)"),
+    ("workable", r"apply\.workable\.com/([a-z0-9_-]+)"),
+    ("recruitee", r"([a-z0-9-]+)\.recruitee\.com"),
+    ("workday", r"(https?://[a-z0-9-]+\.wd\d+\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?[A-Za-z0-9_-]+)"),
+]
+# Recognized but not readable yet; reported so we know what each company uses.
+UNSUPPORTED = {"icims": r"icims\.com", "eightfold": r"eightfold\.ai", "jobvite": r"jobvite\.com",
+               "oracle": r"oraclecloud\.com|taleo\.net", "successfactors": r"successfactors|jobs\.sap\.com",
+               "rippling": r"ats\.rippling\.com", "bamboohr": r"bamboohr\.com/careers",
+               "gem": r"jobs\.gem\.com", "pinpoint": r"pinpointhq\.com", "teamtailor": r"teamtailor\.com",
+               "phenom": r"phenom|phenompeople", "avature": r"avature\.net", "dover": r"app\.dover\.com"}
+_SKIP_SLUGS = {"embed", "js", "jobs", "v1", "api", "static", "assets", "images", "css", "careers", "job_board"}
+
+
+def fetch_page(url: str) -> tuple[str, str]:
+    r = requests.get(url, timeout=TIMEOUT, allow_redirects=True, headers={
+        "User-Agent": "Mozilla/5.0 (compatible; job-watch/1.0; careers page check)",
+        "Accept": "text/html,application/xhtml+xml"})
+    r.raise_for_status()
+    return r.url, r.text
+
+
+def sniff_careers(url: str) -> tuple[list[tuple[str, str]], str | None]:
+    """Reads a careers page (and up to 3 job-listing links on it) and returns
+    ([(platform, board)], unsupported_platform_name_or_None)."""
+    found, unsupported, pages = [], None, []
+    try:
+        final, page = fetch_page(url)
+        pages.append((final, page))
+    except Exception:  # noqa: BLE001
+        return [], None
+    host = urlparse(final).netloc
+    if "myworkdayjobs.com" in final:
+        found.append(("workday", final.split("?")[0]))
+    links = re.findall(r'href="([^"]+)"', page)
+    for href in links:
+        full = href if href.startswith("http") else (f"https://{host}{href}" if href.startswith("/") else "")
+        if full and urlparse(full).netloc.endswith(host.split(".", 1)[-1]) and full != final and \
+                re.search(r"(open-?roles|openings|positions|all-?jobs|job-?search|/jobs/?$|search-jobs)", full, re.I):
+            try:
+                pages.append(fetch_page(full))
+            except Exception:  # noqa: BLE001
+                pass
+            if len(pages) >= 4:
+                break
+    for _, text in pages:
+        for ats, pat in SNIFF_PATTERNS:
+            for m in re.finditer(pat, text):
+                board = m.group(1).rstrip(".")
+                if board.lower() not in _SKIP_SLUGS and (ats, board) not in found:
+                    found.append((ats, board))
+        if not unsupported:
+            for name, pat in UNSUPPORTED.items():
+                if re.search(pat, text, re.I):
+                    unsupported = name
+                    break
+    return found, unsupported
 
 
 # ---------------------------------------------------------------- details, pay, location
@@ -504,14 +606,28 @@ def discover(company: dict) -> dict:
             fallback = fallback or {**entry, "name_mismatch": True}
     if fallback:
         return fallback
+    platform = None
+    if company.get("careers"):
+        candidates, platform = sniff_careers(company["careers"])
+        for ats, board in candidates:
+            reader = READERS.get(ats) or EXTRA_READERS.get(ats)
+            try:
+                jobs, board_name = reader(board)
+            except Exception:  # noqa: BLE001
+                continue
+            if jobs:
+                return {"ats": ats, "slug": board, "board_name": board_name, "jobs": len(jobs),
+                        "found": today, "via": "careers page"}
     entry = {"ats": None, "tried": today}
+    if platform:
+        entry["platform"] = platform
     if error:
         entry["error"] = error  # a lookup failed for a temporary reason, so retry tomorrow
     return entry
 
 
 def needs_discovery(company, entry, force=False) -> bool:
-    if company.get("board") or company.get("workday") or company.get("skip"):
+    if company.get("board") or company.get("workday") or company.get("eightfold") or company.get("skip"):
         return False
     if force or not entry:
         return True
@@ -526,6 +642,8 @@ def needs_discovery(company, entry, force=False) -> bool:
 def board_for(company, boards):
     if company.get("workday"):
         return {"ats": "workday", "slug": company["workday"]}
+    if company.get("eightfold"):
+        return {"ats": "eightfold", "slug": company["eightfold"]}
     if company.get("board"):
         return company["board"]
     entry = boards.get(company["name"]) or {}
@@ -533,9 +651,8 @@ def board_for(company, boards):
 
 
 def read_board(board):
-    if board["ats"] == "workday":
-        return read_workday(board["slug"])[0]
-    return READERS[board["ats"]](board["slug"])[0]
+    reader = READERS.get(board["ats"]) or EXTRA_READERS[board["ats"]]
+    return reader(board["slug"])[0]
 
 
 # ---------------------------------------------------------------- diff
@@ -672,7 +789,9 @@ def run(args):
 
     # 2. Read every placed board.
     targets = [(c, board_for(c, boards)) for c in companies]
-    uncovered = [c["name"] for c, b in targets if not b]
+    uncovered = [c["name"] + (f" ({boards[c['name']]['platform']})"
+                              if boards.get(c["name"], {}).get("platform") else "")
+                 for c, b in targets if not b]
     targets = [(c, b) for c, b in targets if b]
 
     def read(pair):

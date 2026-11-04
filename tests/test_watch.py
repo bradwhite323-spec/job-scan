@@ -234,3 +234,30 @@ def test_discover_marks_temporary_errors_for_retry(monkeypatch):
     assert e["ats"] is None and "error" in e
     assert watch.needs_discovery({"name": "Hebbia"}, e) is True
     assert watch.needs_discovery({"name": "Hebbia"}, {"ats": None, "tried": watch.dt.date.today().isoformat()}) is False
+
+
+def test_sniff_careers(monkeypatch):
+    pages = {
+        "https://acme.com/careers": ("https://acme.com/careers",
+            '<a href="/careers/open-roles">See openings</a> <a href="https://x.com">x</a>'),
+        "https://acme.com/careers/open-roles": ("https://acme.com/careers/open-roles",
+            '<script src="https://boards.greenhouse.io/embed/job_board/js?for=acmeinc"></script>'
+            '<a href="https://acme.wd5.myworkdayjobs.com/en-US/AcmeCareers/job/123">x</a>'),
+    }
+    monkeypatch.setattr(watch, "fetch_page", lambda url: pages[url])
+    found, unsupported = watch.sniff_careers("https://acme.com/careers")
+    assert ("greenhouse", "acmeinc") in found
+    assert ("workday", "https://acme.wd5.myworkdayjobs.com/en-US/AcmeCareers") in found
+    assert unsupported is None
+
+    monkeypatch.setattr(watch, "fetch_page", lambda url: (url, '<iframe src="https://careers-acme.icims.com/jobs"></iframe>'))
+    found, unsupported = watch.sniff_careers("https://acme.com/jobs")
+    assert found == [] and unsupported == "icims"
+
+
+def test_discover_uses_careers_page(monkeypatch):
+    monkeypatch.setattr(watch, "READERS", {"greenhouse": lambda s: ([{"id": 1}], "Acme") if s == "acmeinc"
+                                           else (_ for _ in ()).throw(watch.NotFound())})
+    monkeypatch.setattr(watch, "sniff_careers", lambda url: ([("greenhouse", "acmeinc")], None))
+    e = watch.discover({"name": "Acme", "careers": "https://acme.com/careers"})
+    assert e["ats"] == "greenhouse" and e["slug"] == "acmeinc" and e["via"] == "careers page"
