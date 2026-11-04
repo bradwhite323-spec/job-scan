@@ -777,6 +777,28 @@ def coverage(_args):
     return 0
 
 
+def probe(args):
+    """Prints what each platform returns for the given board names. Posts and saves nothing."""
+    urls = {
+        "greenhouse": "https://boards-api.greenhouse.io/v1/boards/{s}/jobs",
+        "lever": "https://api.lever.co/v0/postings/{s}?mode=json",
+        "ashby": "https://api.ashbyhq.com/posting-api/job-board/{s}",
+        "smartrecruiters": "https://api.smartrecruiters.com/v1/companies/{s}/postings?limit=1",
+        "workable": "https://apply.workable.com/api/v1/widget/accounts/{s}",
+    }
+    for slug in args.slugs:
+        for ats, u in urls.items():
+            url = u.format(s=slug)
+            try:
+                r = _session.get(url, timeout=TIMEOUT)
+                body = r.text[:160].replace("\n", " ")
+                print(f"{slug:<22}{ats:<16}{r.status_code}  {body}")
+            except Exception as e:  # noqa: BLE001
+                print(f"{slug:<22}{ats:<16}ERR  {type(e).__name__}: {e}")
+            time.sleep(0.5)
+    return 0
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -786,9 +808,13 @@ def main(argv=None):
     d = sub.add_parser("discover")
     d.set_defaults(rediscover=True, dry_run=False)
     sub.add_parser("coverage")
+    pr = sub.add_parser("probe")
+    pr.add_argument("slugs", nargs="+")
     args = p.parse_args(argv)
     if args.cmd == "coverage":
         return coverage(args)
+    if args.cmd == "probe":
+        return probe(args)
     return run(args)
 
 

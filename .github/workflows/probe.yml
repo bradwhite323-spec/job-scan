@@ -1,0 +1,23 @@
+name: Probe boards
+
+# Diagnostic only: prints what each job platform returns for some board names.
+# Doesn't post to Slack or change any files.
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: "Board names to check, separated by spaces"
+        required: true
+        default: "hebbia fireworksai marqeta mistral"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python watch.py probe ${{ inputs.slugs }}
