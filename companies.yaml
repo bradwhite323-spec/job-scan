@@ -153,7 +153,7 @@ Security:
   - {name: Expel, slugs: [expel]}
   - {name: Socure, slugs: [socure]}
   - {name: Persona, slugs: [withpersona, persona]}
-  - {name: Blackbird.AI, slugs: [blackbirdai], careers: 'https://blackbird.ai/careers/'}
+  - {name: Blackbird.AI, board: {ats: workable, slug: blackbirdai}}
 
 Digital and mental health:
   - {name: Ro, slugs: [ro, roman]}

@@ -655,7 +655,10 @@ def discover(company: dict) -> dict:
             reader = READERS.get(ats) or EXTRA_READERS.get(ats)
             try:
                 jobs, board_name = reader(board)
-            except Exception:  # noqa: BLE001
+            except NotFound:
+                continue
+            except Exception as e:  # noqa: BLE001
+                error = f"{ats}:{board} {type(e).__name__}"
                 continue
             if jobs:
                 return {"ats": ats, "slug": board, "board_name": board_name, "jobs": len(jobs),
