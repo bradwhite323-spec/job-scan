@@ -1,0 +1,382 @@
+{
+ "ashby:abridge:ac71d5b4-0cb7-4c32-a0c7-0dca6718b8c5": {
+  "company": "Abridge",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "United States - Remote; CHI Office; SF Office; NYC Office; PGH Office",
+  "pay": "$167K\u2013$241K",
+  "tier": 0,
+  "title": "Head of Customer Support",
+  "url": "https://jobs.ashbyhq.com/abridge/ac71d5b4-0cb7-4c32-a0c7-0dca6718b8c5"
+ },
+ "ashby:airwallex:8f5b5c0d-28c9-4181-82e0-92d06597072b": {
+  "company": "Airwallex",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "UK - London",
+  "pay": "",
+  "tier": 3,
+  "title": "Director of Solutions Engineering - EMEA",
+  "url": "https://jobs.ashbyhq.com/airwallex/8f5b5c0d-28c9-4181-82e0-92d06597072b"
+ },
+ "ashby:clickhouse:36597a97-9da9-4371-b650-082643860b1c": {
+  "company": "ClickHouse",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "India; Singapore",
+  "pay": "",
+  "tier": 3,
+  "title": "Director of Solutions Architecture-India/ASEAN",
+  "url": "https://jobs.ashbyhq.com/clickhouse/36597a97-9da9-4371-b650-082643860b1c"
+ },
+ "ashby:cohere:14a286d9-e415-4198-8d3b-8e0a7882a5b6": {
+  "company": "Cohere",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Singapore; Korea",
+  "pay": "",
+  "tier": 3,
+  "title": "Senior Director, Solutions Architecture, APAC",
+  "url": "https://jobs.ashbyhq.com/cohere/14a286d9-e415-4198-8d3b-8e0a7882a5b6"
+ },
+ "ashby:crusoe:f1bcbca2-2c44-40b5-81e7-2186360efb92": {
+  "company": "Crusoe",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Dublin - IE",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Customer Support",
+  "url": "https://jobs.ashbyhq.com/crusoe/f1bcbca2-2c44-40b5-81e7-2186360efb92"
+ },
+ "ashby:cursor:040ac0f8-dba7-4d13-8171-b902e925f334": {
+  "company": "Anysphere (Cursor)",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Remote",
+  "pay": "",
+  "tier": 0,
+  "title": "Regional Director, Field Engineering - Verticals",
+  "url": "https://jobs.ashbyhq.com/cursor/040ac0f8-dba7-4d13-8171-b902e925f334"
+ },
+ "ashby:cursor:646f20fa-9cea-4a23-a245-4339619a5497": {
+  "company": "Anysphere (Cursor)",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, CA; New York, NY",
+  "pay": "",
+  "tier": 1,
+  "title": "Regional Director, Field Engineering, Healthcare",
+  "url": "https://jobs.ashbyhq.com/cursor/646f20fa-9cea-4a23-a245-4339619a5497"
+ },
+ "ashby:cursor:7d6611cb-28bf-4277-8758-178154466934": {
+  "company": "Anysphere (Cursor)",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "Washington, D.C.",
+  "pay": "",
+  "tier": 2,
+  "title": "Regional Director, Forward Deployed Engineering - Public Sector",
+  "url": "https://jobs.ashbyhq.com/cursor/7d6611cb-28bf-4277-8758-178154466934"
+ },
+ "ashby:cursor:c30b1b69-518a-4fdd-a316-667380bcd608": {
+  "company": "Anysphere (Cursor)",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "Singapore; New Delhi; Mumbai",
+  "pay": "",
+  "tier": 3,
+  "title": "Regional Director, Forward Deployed Engineering (Singapore)",
+  "url": "https://jobs.ashbyhq.com/cursor/c30b1b69-518a-4fdd-a316-667380bcd608"
+ },
+ "ashby:cursor:f7ec7811-a573-42fa-8ade-01e2d07681ef": {
+  "company": "Anysphere (Cursor)",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, CA; New York, NY; Austin, TX",
+  "pay": "",
+  "tier": 1,
+  "title": "Regional Director, Forward Deployed Engineering",
+  "url": "https://jobs.ashbyhq.com/cursor/f7ec7811-a573-42fa-8ade-01e2d07681ef"
+ },
+ "ashby:decagon:9686ca93-1073-48f1-bc2a-af241eba83d1": {
+  "company": "Decagon",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "London",
+  "pay": "",
+  "tier": 3,
+  "title": "Director of Solutions Engineering - EMEA Enterprise",
+  "url": "https://jobs.ashbyhq.com/decagon/9686ca93-1073-48f1-bc2a-af241eba83d1"
+ },
+ "ashby:decagon:ab6a5dac-d63b-4862-bc12-c5c9525b6f8b": {
+  "company": "Decagon",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "London",
+  "pay": "",
+  "tier": 3,
+  "title": "Director of Solutions Engineering - EMEA Strat",
+  "url": "https://jobs.ashbyhq.com/decagon/ab6a5dac-d63b-4862-bc12-c5c9525b6f8b"
+ },
+ "ashby:semgrep:f789bb11-98cd-4cb9-ba67-84c5435724d0": {
+  "company": "Semgrep",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco Office",
+  "pay": "$222K\u2013$396K (varies by location)",
+  "tier": 1,
+  "title": "Head of Field Engineering",
+  "url": "https://jobs.ashbyhq.com/semgrep/f789bb11-98cd-4cb9-ba67-84c5435724d0"
+ },
+ "ashby:snowflake:f607346e-1368-40d1-86bb-994ae0c195f3": {
+  "company": "Snowflake",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "GB-London",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Priority Support Engineering EMEA",
+  "url": "https://jobs.ashbyhq.com/snowflake/f607346e-1368-40d1-86bb-994ae0c195f3"
+ },
+ "ashby:socure:359ff16b-faa4-4db0-b165-5a09b79c5da4": {
+  "company": "Socure",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Remote - USA; Hybrid - San Francisco, CA; Hybrid - Seattle, WA; Hybrid - New York, NY; Hybrid - Miami, FL; Hybrid - Washington DC",
+  "pay": "$220K\u2013$260K",
+  "tier": 0,
+  "title": "Head of Solution Consulting, Crypto",
+  "url": "https://jobs.ashbyhq.com/socure/359ff16b-faa4-4db0-b165-5a09b79c5da4"
+ },
+ "greenhouse:andurilindustries:5158713007": {
+  "company": "Anduril",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Costa Mesa, California, United States",
+  "pay": "$219K\u2013$290K",
+  "tier": 2,
+  "title": "Head of Integrated Product Support, Tactical Effects",
+  "url": "https://boards.greenhouse.io/andurilindustries/jobs/5158713007?gh_jid=5158713007"
+ },
+ "greenhouse:attentive:4376219009": {
+  "company": "Attentive",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "New York, NY (Hybrid)",
+  "pay": "$155K\u2013$200K",
+  "tier": 1,
+  "title": "Director, Customer Support",
+  "url": "https://job-boards.greenhouse.io/attentive/jobs/4376219009"
+ },
+ "greenhouse:c3iot:8642819002": {
+  "company": "C3 AI",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Redwood City, California, United States",
+  "pay": "$180K\u2013$230K",
+  "tier": 1,
+  "title": "Director, Customer Support",
+  "url": "https://c3.ai/job-description/8642819002?gh_jid=8642819002"
+ },
+ "greenhouse:coreweave:4706082006": {
+  "company": "CoreWeave",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, CA",
+  "pay": "$227K\u2013$303K",
+  "tier": 1,
+  "title": "Director, Account Solutions Architecture",
+  "url": "https://coreweave.com/careers/job?4706082006&board=coreweave&gh_jid=4706082006"
+ },
+ "greenhouse:databricks:8397552002": {
+  "company": "Databricks",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Toronto, Canada",
+  "pay": "$325K\u2013$395K",
+  "tier": 3,
+  "title": "Director, Field Engineering",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8397552002"
+ },
+ "greenhouse:databricks:8397558002": {
+  "company": "Databricks",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Tokyo, Japan",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Field Engineering",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8397558002"
+ },
+ "greenhouse:databricks:8662803002": {
+  "company": "Databricks",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, California",
+  "pay": "",
+  "tier": 1,
+  "title": "Director, Field Engineering Emerging Enterprises & Startups",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8662803002"
+ },
+ "greenhouse:databricks:8739519002": {
+  "company": "Databricks",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Maryland; Virginia; Washington, D.C.",
+  "pay": "$250K\u2013$343K",
+  "tier": 2,
+  "title": "Director, Delivery Solutions Architects - Public Sector",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739519002"
+ },
+ "greenhouse:datadog:8136510": {
+  "company": "Datadog",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Illinois, USA, Remote; Michigan, USA, Remote; Texas, USA, Remote",
+  "pay": "$180K\u2013$240K",
+  "tier": 0,
+  "title": "Director, Enterprise Sales Engineering - US Central",
+  "url": "https://careers.datadoghq.com/detail/8136510/?gh_jid=8136510"
+ },
+ "greenhouse:datadog:8172864": {
+  "company": "Datadog",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Singapore, Singapore",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Sales Engineering - ASEAN",
+  "url": "https://careers.datadoghq.com/detail/8172864/?gh_jid=8172864"
+ },
+ "greenhouse:dataiku:6236320004": {
+  "company": "Dataiku",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "United States, Remote",
+  "pay": "$187K\u2013$234K",
+  "tier": 0,
+  "title": "Director, Sales Engineering",
+  "url": "https://job-boards.greenhouse.io/dataiku/jobs/6236320004"
+ },
+ "greenhouse:dataiku:6236322004": {
+  "company": "Dataiku",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "United States, Remote",
+  "pay": "$206K\u2013$257K",
+  "tier": 0,
+  "title": "Director, Sales Engineering",
+  "url": "https://job-boards.greenhouse.io/dataiku/jobs/6236322004"
+ },
+ "greenhouse:gitlab:8629019002": {
+  "company": "GitLab",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Bangalore, India",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Support (Bengaluru)",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8629019002"
+ },
+ "greenhouse:gitlab:8862046002": {
+  "company": "GitLab",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Remote, United States",
+  "pay": "$244K\u2013$410K",
+  "tier": 0,
+  "title": "Senior Director, Global SME Solutions Architecture",
+  "url": "https://job-boards.greenhouse.io/gitlab/jobs/8862046002"
+ },
+ "greenhouse:gusto:8144242": {
+  "company": "Gusto",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, CA - Hybrid",
+  "pay": "",
+  "tier": 1,
+  "title": "Head of Product, New Customer Experience",
+  "url": "https://job-boards.greenhouse.io/gusto/jobs/8144242"
+ },
+ "greenhouse:mongodb:8066684": {
+  "company": "MongoDB",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Bengaluru",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Solutions Architecture",
+  "url": "https://www.mongodb.com/careers/job/?gh_jid=8066684"
+ },
+ "greenhouse:revolutionmedicines:8034805003": {
+  "company": "Revolution Medicines",
+  "family": "Product Support",
+  "first_seen": "2026-11-04",
+  "location": "Tokyo, Japan",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Customer Experience, Japan",
+  "url": "https://www.revmed.com/careers-list/?gh_jid=8034805003"
+ },
+ "greenhouse:stripe:7523947": {
+  "company": "Stripe",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "SF",
+  "pay": "",
+  "tier": 1,
+  "title": "Head of Specialist Solutions Architecture, Revenue Suite (AMER)",
+  "url": "https://stripe.com/jobs/search?gh_jid=7523947"
+ },
+ "greenhouse:stripe:7915144": {
+  "company": "Stripe",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "San Francisco, CA",
+  "pay": "",
+  "tier": 1,
+  "title": "Head of Platforms Solutions Architecture",
+  "url": "https://stripe.com/jobs/search?gh_jid=7915144"
+ },
+ "greenhouse:stripe:8175669": {
+  "company": "Stripe",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "USA",
+  "pay": "",
+  "tier": 2,
+  "title": "Global Head of Specialist Solutions Architecture, Revenue Suite",
+  "url": "https://stripe.com/jobs/search?gh_jid=8175669"
+ },
+ "greenhouse:vercel:5979111004": {
+  "company": "Vercel",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Hybrid - San Francisco",
+  "pay": "$260K\u2013$300K",
+  "tier": 1,
+  "title": "Head of Field Engineering Operations",
+  "url": "https://job-boards.greenhouse.io/vercel/jobs/5979111004"
+ },
+ "greenhouse:vercel:6111005004": {
+  "company": "Vercel",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Hybrid - London, Berlin",
+  "pay": "",
+  "tier": 3,
+  "title": "Head of Solutions Architecture, EMEA",
+  "url": "https://job-boards.greenhouse.io/vercel/jobs/6111005004"
+ },
+ "greenhouse:vercel:6119846004": {
+  "company": "Vercel",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-04",
+  "location": "Hybrid - San Francisco, New York City, Austin",
+  "pay": "$382K\u2013$485K",
+  "tier": 1,
+  "title": "Head of Solutions Architecture, Startups",
+  "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004"
+ }
+}
