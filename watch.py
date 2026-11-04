@@ -912,6 +912,21 @@ def probe(args):
             found, unsupported = sniff_careers(slug[6:])
             print(f"SNIFF {slug[6:]} -> {found} unsupported={unsupported}")
             continue
+        if slug.startswith("keys:"):
+            try:
+                d = _session.get(slug[5:], timeout=TIMEOUT).json()
+                first = d[0] if isinstance(d, list) and d else d
+                def shape(o, depth=0):
+                    if isinstance(o, dict):
+                        return {k: shape(v, depth + 1) if depth < 2 else type(v).__name__ for k, v in o.items()
+                                if k not in ("content", "description", "descriptionHtml")}
+                    if isinstance(o, list):
+                        return [shape(o[0], depth + 1)] if o else []
+                    return o if isinstance(o, (int, float, bool)) or (isinstance(o, str) and len(o) < 60) else type(o).__name__
+                print(f"KEYS {slug[5:]} -> {json.dumps(shape(first))[:1500]}")
+            except Exception as e:  # noqa: BLE001
+                print(f"KEYS {slug[5:]} -> ERR {type(e).__name__}: {e}")
+            continue
         if slug.startswith("http"):
             try:
                 r = _session.get(slug, timeout=TIMEOUT)
