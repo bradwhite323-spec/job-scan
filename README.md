@@ -103,3 +103,10 @@ To refresh (monthly is plenty):
 
 If a connection's company is spelled differently from your list (e.g. after a rebrand), add it to
 that company's `aliases:` in `companies.yaml`.
+
+## Warm intros (on demand)
+
+The `warm-intros` skill in `.claude/skills/` looks up first- and second-degree LinkedIn
+connections at a shortlisted company and adds them to a private "Warm Intros" tracker page. Ask
+Claude "warm intros for <company>". It runs only when asked, a few companies at a time, and only the
+company's LinkedIn ID is saved to this repo.

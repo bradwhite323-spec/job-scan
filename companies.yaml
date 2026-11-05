@@ -5,6 +5,8 @@
 #   board:   pin the platform once known, e.g.  board: {ats: greenhouse, slug: stripe}
 #   workday: a Workday careers URL, e.g. https://acme.wd5.myworkdayjobs.com/External
 #   skip:    true to pause a company
+#   aliases: other spellings people use on LinkedIn, e.g. [Gong.io]
+#   linkedin_id: the company's numeric LinkedIn ID, filled in by the warm-intros skill
 #
 # Supported platforms: greenhouse, lever, ashby, smartrecruiters, workable, recruitee, workday.
 
@@ -41,7 +43,7 @@ Conversational AI and CX:
   - {name: Decagon, slugs: [decagon]}
   - {name: Front, slugs: [frontcareers], careers: 'https://front.com/careers'}
   - {name: Intercom, board: {ats: greenhouse, slug: intercom}}  # board is titled "Fin"
-  - {name: Gong, slugs: [gongio, gong]}
+  - {name: Gong, slugs: [gongio, gong], linkedin_id: 10454372}
   - {name: Talkdesk, slugs: [talkdesk2, talkdesk]}
   - {name: ASAPP, slugs: [asapp], careers: 'https://www.asapp.com/careers'}
   - {name: Observe.AI, slugs: [observeai]}
