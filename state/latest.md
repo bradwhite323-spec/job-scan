@@ -1,5 +1,5 @@
-Job watch, Fri Nov 6: no new matches on your list (204 boards checked)
+Job watch, Sat Nov 7: no new matches on your list (203 boards checked)
 
-_No longer listed (3):_ Director of Solutions Architecture-India/ASEAN · ClickHouse; Head of Solution Consulting, Crypto · Socure; Head of Integrated Product Support, Tactical Effects · Anduril
+:warning: Couldn't read 1 board(s): Shield AI
 
 _32 companies not covered yet (listed on Mondays)._

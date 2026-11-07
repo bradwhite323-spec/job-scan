@@ -1297,6 +1297,7 @@
  "Shield AI": {
   "ats": "ashby",
   "board_name": null,
+  "broken": "2026-11-07",
   "found": "2026-11-04",
   "jobs": 692,
   "slug": "shieldai"
