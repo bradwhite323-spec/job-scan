@@ -1295,11 +1295,10 @@
   "slug": "servicetitan"
  },
  "Shield AI": {
-  "ats": "ashby",
+  "ats": "lever",
   "board_name": null,
-  "broken": "2026-11-07",
-  "found": "2026-11-04",
-  "jobs": 692,
+  "found": "2026-11-08",
+  "jobs": 660,
   "slug": "shieldai"
  },
  "Shopify": {
