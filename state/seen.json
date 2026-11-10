@@ -51,6 +51,7 @@
   "url": "https://jobs.ashbyhq.com/crusoe/f1bcbca2-2c44-40b5-81e7-2186360efb92"
  },
  "ashby:cursor:040ac0f8-dba7-4d13-8171-b902e925f334": {
+  "closed": "2026-11-10",
   "company": "Anysphere (Cursor)",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",
@@ -60,7 +61,18 @@
   "title": "Regional Director, Field Engineering - Verticals",
   "url": "https://jobs.ashbyhq.com/cursor/040ac0f8-dba7-4d13-8171-b902e925f334"
  },
+ "ashby:cursor:0473120a-7dd7-4604-b5f6-0b834cc6e782": {
+  "company": "Anysphere (Cursor)",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-10",
+  "location": "Washington, D.C.",
+  "pay": "$350K\u2013$400K",
+  "tier": 2,
+  "title": "Regional Director, Forward Deployed Engineering - Public Sector",
+  "url": "https://jobs.ashbyhq.com/cursor/0473120a-7dd7-4604-b5f6-0b834cc6e782"
+ },
  "ashby:cursor:646f20fa-9cea-4a23-a245-4339619a5497": {
+  "closed": "2026-11-10",
   "company": "Anysphere (Cursor)",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",
@@ -71,6 +83,7 @@
   "url": "https://jobs.ashbyhq.com/cursor/646f20fa-9cea-4a23-a245-4339619a5497"
  },
  "ashby:cursor:7d6611cb-28bf-4277-8758-178154466934": {
+  "closed": "2026-11-10",
   "company": "Anysphere (Cursor)",
   "family": "Forward Deployed",
   "first_seen": "2026-11-04",
@@ -79,6 +92,16 @@
   "tier": 2,
   "title": "Regional Director, Forward Deployed Engineering - Public Sector",
   "url": "https://jobs.ashbyhq.com/cursor/7d6611cb-28bf-4277-8758-178154466934"
+ },
+ "ashby:cursor:ad8b3f43-6c66-4918-8eef-cef5753429bf": {
+  "company": "Anysphere (Cursor)",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-10",
+  "location": "Remote",
+  "pay": "$245K\u2013$400K (varies by location)",
+  "tier": 0,
+  "title": "Regional Director, Field Engineering",
+  "url": "https://jobs.ashbyhq.com/cursor/ad8b3f43-6c66-4918-8eef-cef5753429bf"
  },
  "ashby:cursor:c30b1b69-518a-4fdd-a316-667380bcd608": {
   "company": "Anysphere (Cursor)",
@@ -402,6 +425,16 @@
   "title": "Global Head of Specialist Solutions Architecture, Revenue Suite",
   "url": "https://stripe.com/jobs/search?gh_jid=8175669"
  },
+ "greenhouse:stripe:8361184": {
+  "company": "Stripe",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-10",
+  "location": "San Francisco, CA or New York, NY or Remote",
+  "pay": "",
+  "tier": 0,
+  "title": "Head of Strategic Accounts, Solutions Architecture",
+  "url": "https://stripe.com/jobs/search?gh_jid=8361184"
+ },
  "greenhouse:vercel:5979111004": {
   "company": "Vercel",
   "family": "Solution Consulting",
@@ -578,6 +611,16 @@
   "title": "Director Solutions Consulting South East",
   "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Madrid-Flexible/Director-Solutions-Consulting-South-East_JR112535-1"
  },
+ "workday:genesys:/job/Riyadh-Saudi-Arabia/Director--Solutions-Consulting-Middle-East---Africa_JR112530-1": {
+  "company": "Genesys",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-10",
+  "location": "Riyadh, Saudi Arabia",
+  "pay": "",
+  "tier": 2,
+  "title": "Director, Solutions Consulting Middle East & Africa",
+  "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Riyadh-Saudi-Arabia/Director--Solutions-Consulting-Middle-East---Africa_JR112530-1"
+ },
  "workday:genesys:/job/Sao-Paulo-Brazil/Director--Product-Support---LATAM_JR112747": {
   "company": "Genesys",
   "family": "Product Support",
@@ -609,6 +652,7 @@
   "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Sydney-Flexible/Director--Solution-Consulting--ANZ_JR112125-1"
  },
  "workday:genesys:/job/Texas-USA/Director--Forward-Deployed-Engineering_JR112884": {
+  "closed": "2026-11-10",
   "company": "Genesys",
   "family": "Forward Deployed",
   "first_seen": "2026-11-04",
