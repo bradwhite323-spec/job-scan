@@ -15,7 +15,7 @@
  },
  "ASAPP": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Abnormal Security": {
   "ats": "greenhouse",
@@ -81,8 +81,11 @@
   "slug": "aligned"
  },
  "Alma": {
-  "ats": null,
-  "tried": "2026-11-04"
+  "ats": "ashby",
+  "board_name": null,
+  "found": "2026-11-11",
+  "jobs": 22,
+  "slug": "alma"
  },
  "AlphaSense": {
   "ats": "greenhouse",
@@ -159,7 +162,7 @@
  "Atlassian": {
   "ats": null,
   "platform": "icims",
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Attentive": {
   "ats": "greenhouse",
@@ -231,7 +234,7 @@
  },
  "CSAA Insurance Group": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Calendly": {
   "ats": "greenhouse",
@@ -242,7 +245,7 @@
  },
  "Calix": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Canva": {
   "ats": "smartrecruiters",
@@ -289,7 +292,7 @@
  },
  "Ciena": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Cityblock Health": {
   "ats": "workday",
@@ -315,7 +318,7 @@
  },
  "Clearcover": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "ClickHouse": {
   "ats": "ashby",
@@ -361,7 +364,7 @@
  },
  "Common Room": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Commure": {
   "ats": "ashby",
@@ -372,7 +375,7 @@
  },
  "Confluent": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "CoreWeave": {
   "ats": "greenhouse",
@@ -411,7 +414,7 @@
  },
  "Cyera": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "D-Wave": {
   "ats": "rippling",
@@ -451,7 +454,7 @@
  },
  "Deel": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Devoted Health": {
   "ats": "smartrecruiters",
@@ -518,7 +521,7 @@
  },
  "EverCommerce": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Expel": {
   "ats": "greenhouse",
@@ -558,7 +561,7 @@
  },
  "Framer": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Front": {
   "ats": "ashby",
@@ -706,7 +709,7 @@
  },
  "Hims & Hers": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Hinge Health": {
   "ats": "ashby",
@@ -776,7 +779,7 @@
  },
  "Insilico Medicine": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Insitro": {
   "ats": "ashby",
@@ -865,7 +868,7 @@
  },
  "Leidos": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Lemonade": {
   "ats": "ashby",
@@ -897,7 +900,7 @@
  },
  "Marqeta": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Maven Clinic": {
   "ats": "greenhouse",
@@ -944,7 +947,7 @@
  },
  "Monday.com": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "MongoDB": {
   "ats": "greenhouse",
@@ -975,7 +978,7 @@
  "Next Insurance": {
   "ats": null,
   "platform": "phenom",
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Notion": {
   "ats": "ashby",
@@ -1056,7 +1059,7 @@
  },
  "Papaya Global": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Patch My PC": {
   "ats": "lever",
@@ -1067,12 +1070,12 @@
  },
  "Paylocity": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Peraton": {
   "ats": null,
   "platform": "icims",
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Perplexity": {
   "ats": "ashby",
@@ -1097,7 +1100,7 @@
  },
  "Pindrop": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Pinterest": {
   "ats": "greenhouse",
@@ -1115,7 +1118,7 @@
  },
  "Procore": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "PsiQuantum": {
   "ats": "greenhouse",
@@ -1267,7 +1270,7 @@
  },
  "Schrodinger": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Second Front Systems": {
   "ats": "ashby",
@@ -1278,7 +1281,7 @@
  },
  "Seismic": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Semgrep": {
   "ats": "ashby",
@@ -1303,7 +1306,7 @@
  },
  "Shopify": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Sierra": {
   "ats": "ashby",
@@ -1363,7 +1366,7 @@
  },
  "Spring Health": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Starburst": {
   "ats": "greenhouse",
@@ -1402,11 +1405,11 @@
  },
  "Superhuman (Grammarly)": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Switch": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Sword Health": {
   "ats": "greenhouse",
@@ -1438,7 +1441,7 @@
  },
  "Tempus AI": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Tipalti": {
   "ats": "greenhouse",
@@ -1514,7 +1517,7 @@
  },
  "Wiley": {
   "ats": null,
-  "tried": "2026-11-04"
+  "tried": "2026-11-11"
  },
  "Wiz": {
   "ats": "greenhouse",

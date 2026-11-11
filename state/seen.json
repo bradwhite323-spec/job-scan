@@ -1,5 +1,6 @@
 {
  "ashby:abridge:ac71d5b4-0cb7-4c32-a0c7-0dca6718b8c5": {
+  "closed": "2026-11-11",
   "company": "Abridge",
   "family": "Product Support",
   "first_seen": "2026-11-04",
@@ -193,6 +194,16 @@
   "title": "Director of Engineering, Forward Deployed Engineering",
   "url": "https://jobs.ashbyhq.com/hadrian-automation/9e76c3d0-b5a6-49e8-91b5-73967708628d"
  },
+ "ashby:openai:deacd43e-9c1b-467c-96e2-11f4f6bdb139": {
+  "company": "OpenAI",
+  "family": "Product Support",
+  "first_seen": "2026-11-11",
+  "location": "San Francisco",
+  "pay": "$347K\u2013$385K",
+  "tier": 1,
+  "title": "Head of Dedicated Support Engineering",
+  "url": "https://jobs.ashbyhq.com/openai/deacd43e-9c1b-467c-96e2-11f4f6bdb139"
+ },
  "ashby:semgrep:f789bb11-98cd-4cb9-ba67-84c5435724d0": {
   "company": "Semgrep",
   "family": "Solution Consulting",
@@ -375,6 +386,26 @@
   "title": "Head of Product, New Customer Experience",
   "url": "https://job-boards.greenhouse.io/gusto/jobs/8144242"
  },
+ "greenhouse:intercom:8375211": {
+  "company": "Intercom",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-11",
+  "location": "NYC, Remote; San Francisco, California",
+  "pay": "$328K\u2013$392K",
+  "tier": 0,
+  "title": "Director, Solutions Engineering",
+  "url": "https://job-boards.greenhouse.io/intercom/jobs/8375211"
+ },
+ "greenhouse:intercom:8375230": {
+  "company": "Intercom",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-11",
+  "location": "Chicago, Illinois",
+  "pay": "$296K\u2013$353K",
+  "tier": 2,
+  "title": "Director, Solutions Engineering",
+  "url": "https://job-boards.greenhouse.io/intercom/jobs/8375230"
+ },
  "greenhouse:mongodb:8066684": {
   "company": "MongoDB",
   "family": "Solution Consulting",
@@ -424,6 +455,16 @@
   "tier": 2,
   "title": "Global Head of Specialist Solutions Architecture, Revenue Suite",
   "url": "https://stripe.com/jobs/search?gh_jid=8175669"
+ },
+ "greenhouse:stripe:8358044": {
+  "company": "Stripe",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-11",
+  "location": "US",
+  "pay": "",
+  "tier": 2,
+  "title": "Global Head of Partner Solutions Architecture",
+  "url": "https://stripe.com/jobs/search?gh_jid=8358044"
  },
  "greenhouse:stripe:8361184": {
   "company": "Stripe",
@@ -622,6 +663,7 @@
   "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Riyadh-Saudi-Arabia/Director--Solutions-Consulting-Middle-East---Africa_JR112530-1"
  },
  "workday:genesys:/job/Sao-Paulo-Brazil/Director--Product-Support---LATAM_JR112747": {
+  "closed": "2026-11-11",
   "company": "Genesys",
   "family": "Product Support",
   "first_seen": "2026-11-04",
