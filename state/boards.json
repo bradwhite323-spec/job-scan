@@ -250,6 +250,7 @@
  "Canva": {
   "ats": "smartrecruiters",
   "board_name": null,
+  "broken": "2026-11-12",
   "found": "2026-11-04",
   "jobs": 33,
   "slug": "canva"
@@ -617,6 +618,7 @@
  "GoodRx": {
   "ats": "ashby",
   "board_name": null,
+  "broken": "2026-11-12",
   "found": "2026-11-04",
   "jobs": 5,
   "slug": "goodrx"

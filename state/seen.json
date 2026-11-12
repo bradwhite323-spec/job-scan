@@ -437,6 +437,7 @@
   "url": "https://stripe.com/jobs/search?gh_jid=7523947"
  },
  "greenhouse:stripe:7915144": {
+  "closed": "2026-11-12",
   "company": "Stripe",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",
@@ -653,6 +654,7 @@
   "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Madrid-Flexible/Director-Solutions-Consulting-South-East_JR112535-1"
  },
  "workday:genesys:/job/Riyadh-Saudi-Arabia/Director--Solutions-Consulting-Middle-East---Africa_JR112530-1": {
+  "closed": "2026-11-12",
   "company": "Genesys",
   "family": "Solution Consulting",
   "first_seen": "2026-11-10",
@@ -705,6 +707,7 @@
   "url": "https://genesys.wd1.myworkdayjobs.com/Genesys/job/Texas-USA/Director--Forward-Deployed-Engineering_JR112884"
  },
  "workday:genesys:/job/Utah-USA/Director--Product-Support---US-West_JR112744": {
+  "closed": "2026-11-12",
   "company": "Genesys",
   "family": "Product Support",
   "first_seen": "2026-11-04",
