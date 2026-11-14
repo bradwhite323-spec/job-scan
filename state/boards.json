@@ -140,6 +140,7 @@
  "Arctic Wolf": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 25,
   "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
@@ -213,6 +214,7 @@
  "Booz Allen Hamilton": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 315,
   "slug": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs",
@@ -285,6 +287,7 @@
  "Chronosphere": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 510,
   "slug": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers",
@@ -297,6 +300,7 @@
  "Cityblock Health": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 6,
   "slug": "https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite",
@@ -419,6 +423,7 @@
  "D-Wave": {
   "ats": "rippling",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 59,
   "slug": "d-wave-quantum",
@@ -588,6 +593,7 @@
  "Genesys": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 59,
   "slug": "https://genesys.wd1.myworkdayjobs.com/Genesys",
@@ -1235,6 +1241,7 @@
  "Root Insurance": {
   "ats": "rippling",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 16,
   "slug": "joinroot",
@@ -1482,6 +1489,7 @@
  "Vantage Data Centers": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 146,
   "slug": "https://vantagedc.wd1.myworkdayjobs.com/Vantage",
@@ -1557,6 +1565,7 @@
  "Zendesk": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-14",
   "found": "2026-11-04",
   "jobs": 25,
   "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",
