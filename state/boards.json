@@ -140,8 +140,7 @@
  "Arctic Wolf": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
+  "found": "2026-11-15",
   "jobs": 25,
   "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
   "via": "careers page"
@@ -214,9 +213,8 @@
  "Booz Allen Hamilton": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 315,
+  "found": "2026-11-15",
+  "jobs": 296,
   "slug": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs",
   "via": "careers page"
  },
@@ -287,9 +285,8 @@
  "Chronosphere": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 510,
+  "found": "2026-11-15",
+  "jobs": 517,
   "slug": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers",
   "via": "careers page"
  },
@@ -300,9 +297,8 @@
  "Cityblock Health": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 6,
+  "found": "2026-11-15",
+  "jobs": 5,
   "slug": "https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite",
   "via": "careers page"
  },
@@ -423,9 +419,8 @@
  "D-Wave": {
   "ats": "rippling",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 59,
+  "found": "2026-11-15",
+  "jobs": 57,
   "slug": "d-wave-quantum",
   "via": "careers page"
  },
@@ -593,9 +588,8 @@
  "Genesys": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 59,
+  "found": "2026-11-15",
+  "jobs": 67,
   "slug": "https://genesys.wd1.myworkdayjobs.com/Genesys",
   "via": "careers page"
  },
@@ -1241,9 +1235,8 @@
  "Root Insurance": {
   "ats": "rippling",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 16,
+  "found": "2026-11-15",
+  "jobs": 24,
   "slug": "joinroot",
   "via": "careers page"
  },
@@ -1489,9 +1482,8 @@
  "Vantage Data Centers": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 146,
+  "found": "2026-11-15",
+  "jobs": 141,
   "slug": "https://vantagedc.wd1.myworkdayjobs.com/Vantage",
   "via": "careers page"
  },
@@ -1565,9 +1557,8 @@
  "Zendesk": {
   "ats": "workday",
   "board_name": null,
-  "broken": "2026-11-14",
-  "found": "2026-11-04",
-  "jobs": 25,
+  "found": "2026-11-15",
+  "jobs": 21,
   "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",
   "via": "careers page"
  },
