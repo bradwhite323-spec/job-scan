@@ -4,8 +4,8 @@ You are running the weekly sweep for this repo. The daily scraper covers
 every company in `companies.yaml`. Your job is to find matching roles at
 companies **not** on that list, plus companies on the list whose boards it
 can't read, verify each one, and leave them in
-`state/sweep_inbox.json`. The next daily run posts them to Slack.
-You never post, message, or apply to anything yourself.
+`state/sweep_inbox.json`, then start the daily run (step 6), which posts
+them to Slack. You never post, message, or apply to anything yourself.
 
 ## 1. Read the repo
 
@@ -97,9 +97,21 @@ Commit only `state/sweep_inbox.json` and `state/sweep_log.md` with the message
 If the push fails, say so plainly in your final message and include the
 verified roles there instead.
 
+## 6. Start the daily run
+
+After a successful push, start the `Job watch` workflow yourself so the roles
+post right away instead of waiting on GitHub's schedule (which sometimes skips
+runs): `actions_run_trigger` with method `run_workflow`, workflow
+`jobwatch.yml`, ref `main`. That run posts the digest; the scheduled runs later
+that day see it already ran and skip, so nothing posts twice. Then check
+`actions_list` (`list_workflow_runs` for `jobwatch.yml`) once or twice over the
+next few minutes and report whether the run succeeded. Skip this step if the
+push failed.
+
 ## Rules
 
 - Never invent a posting, pay range, or location. If it wasn't on a page you
   fetched, it doesn't go in.
 - Don't change any other file in the repo.
-- Don't send messages, apply, or contact anyone.
+- Don't send messages, apply, or contact anyone. Starting the `Job watch`
+  workflow in step 6 is the one allowed way the sweep leads to a Slack post.

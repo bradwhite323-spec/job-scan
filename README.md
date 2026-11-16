@@ -30,8 +30,8 @@ Deployed Engineering roles to Slack.
 Every Monday morning, a Claude scheduled task follows `SWEEP.md`. It searches
 job boards for your titles at companies **not** in `companies.yaml`, opens
 each posting to confirm it's real and open, and saves the verified roles to
-`state/sweep_inbox.json`. Monday's daily digest then posts them in a separate
-section, along with any company that had 2 or more matching roles, as a
+`state/sweep_inbox.json`, then starts the daily run right away, which posts
+them in a separate section, along with any company that had 2 or more matching roles, as a
 suggestion to add to your list. To change what the sweep does, edit `SWEEP.md`.
 
 The first run posts every matching role that's open today, along with the
@@ -66,8 +66,9 @@ companies it couldn't find a board for. After that you only get new postings.
 - **Quiet days:** by default you get a short "no new matches" message each day,
   which confirms the job ran. To skip those, add a repository variable
   `POST_WHEN_EMPTY` set to `false`.
-- **Schedule:** change the `cron` line in `.github/workflows/jobwatch.yml`.
-  The time is in UTC.
+- **Schedule:** change the `cron` lines in `.github/workflows/jobwatch.yml`.
+  The times are in UTC. The second line is a backup in case GitHub skips the
+  first; a scheduled run that finds today's digest already posted exits early.
 - **Re-find all boards:** run the workflow by hand with *Re-find every
   company's job board* ticked.
 

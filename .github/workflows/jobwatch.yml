@@ -4,6 +4,10 @@ on:
   schedule:
     # GitHub schedules run in UTC: 13:43 UTC = 6:43am Denver in winter, 7:43am in summer.
     - cron: "43 13 * * *"
+    # Backup, in case GitHub skips the first one (it sometimes drops scheduled runs).
+    # 15:17 UTC = 8:17am Denver in winter, 9:17am in summer. A scheduled run exits
+    # early when a run has already finished today, so only one digest gets posted.
+    - cron: "17 15 * * *"
   workflow_dispatch:
     inputs:
       rediscover:
@@ -23,14 +27,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      # Scheduled runs skip when today's digest already exists (from the other
+      # schedule, a manual run, or the Monday sweep's trigger). Manual runs always go.
+      - name: Check for an earlier run today
+        id: already
+        run: |
+          today="Job watch, $(TZ=America/Denver date '+%a %b %-d'):"
+          if [ "${{ github.event_name }}" = "schedule" ] && head -1 state/latest.md 2>/dev/null | grep -qF "$today"; then
+            echo "Today's digest was already posted; skipping."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.already.outputs.skip != 'true'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - run: pip install -r requirements.txt
+      - if: steps.already.outputs.skip != 'true'
+        run: pip install -r requirements.txt
 
       - name: Check job boards
+        if: steps.already.outputs.skip != 'true'
         run: python watch.py run ${{ inputs.rediscover == true && '--rediscover' || '' }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -38,6 +56,7 @@ jobs:
           POST_WHEN_EMPTY: ${{ vars.POST_WHEN_EMPTY || 'true' }}
 
       - name: Save state
+        if: steps.already.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
