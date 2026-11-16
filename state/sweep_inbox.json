@@ -1,5 +1,106 @@
 {
- "items": [],
+ "items": [
+  {
+   "company": "Honeycomb",
+   "title": "Head of Global Solution Architecture",
+   "url": "https://job-boards.greenhouse.io/honeycomb/jobs/4943697008",
+   "location": "Remote - United States",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "$200K–$245K base ($260K–$315K OTE)",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Zone & Co",
+   "title": "Director, Solution Consulting",
+   "url": "https://job-boards.greenhouse.io/zonecompanysoftwareconsultingllc/jobs/4967339008",
+   "location": "United States",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Syllo",
+   "title": "Director, Value Engineering",
+   "url": "https://job-boards.greenhouse.io/syllo/jobs/4329177009",
+   "location": "Remote, USA",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "$180K–$225K",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "MaintainX",
+   "title": "Director of Value Engineering",
+   "url": "https://www.getmaintainx.com/jobs/director-of-value-engineering-dced63aa",
+   "location": "United States (All hubs)",
+   "workplace": "Not stated",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Liberate",
+   "title": "Head of Solution Engineering",
+   "url": "https://job-boards.greenhouse.io/liberate/jobs/5078986008",
+   "location": "Boston",
+   "workplace": "Not stated",
+   "family": "Solution Consulting",
+   "pay": "$180K–$225K base + commission",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Snorkel AI",
+   "title": "Head of Forward-Deployed Engineering, DaaS",
+   "url": "https://job-boards.greenhouse.io/snorkelai/jobs/5710174004",
+   "location": "New York City, NY (Hybrid); Redwood City, CA (Hybrid); San Francisco, CA (Hybrid)",
+   "workplace": "Hybrid",
+   "family": "Forward Deployed",
+   "pay": "$220K–$350K",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Ordway",
+   "title": "Director of Technical Support",
+   "url": "https://ordwaylabs.com/careers/director-of-technical-support",
+   "location": "Hybrid – Remote + Office in Washington DC",
+   "workplace": "Hybrid",
+   "family": "Product Support",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Hightouch",
+   "title": "Head of Solutions Engineering, EMEA",
+   "url": "https://job-boards.greenhouse.io/hightouch/jobs/5554043004",
+   "location": "London",
+   "workplace": "Not stated",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-16"
+  },
+  {
+   "company": "Saviynt",
+   "title": "Director, Solutions Engineer - EMEA",
+   "url": "https://jobs.lever.co/saviynt/0c489e94-1fb8-4f7d-bd61-c9ddc5fcc38e",
+   "location": "London / Remote UK / Remote Germany / Amsterdam",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-16"
+  }
+ ],
  "last_posted": "2026-11-15",
- "suggest_add": []
+ "suggest_add": [],
+ "updated": "2026-11-16"
 }
