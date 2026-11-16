@@ -215,6 +215,7 @@
   "url": "https://jobs.ashbyhq.com/semgrep/f789bb11-98cd-4cb9-ba67-84c5435724d0"
  },
  "ashby:snowflake:f607346e-1368-40d1-86bb-994ae0c195f3": {
+  "closed": "2026-11-16",
   "company": "Snowflake",
   "family": "Product Support",
   "first_seen": "2026-11-04",
@@ -561,6 +562,24 @@
   "title": "Director, Solutions Architect",
   "url": "https://job-boards.greenhouse.io/diligentcorporation/jobs/5748903004"
  },
+ "sweep:https://job-boards.greenhouse.io/hightouch/jobs/5554043004": {
+  "company": "Hightouch",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "London",
+  "source": "sweep",
+  "title": "Head of Solutions Engineering, EMEA",
+  "url": "https://job-boards.greenhouse.io/hightouch/jobs/5554043004"
+ },
+ "sweep:https://job-boards.greenhouse.io/honeycomb/jobs/4943697008": {
+  "company": "Honeycomb",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "Remote - United States",
+  "source": "sweep",
+  "title": "Head of Global Solution Architecture",
+  "url": "https://job-boards.greenhouse.io/honeycomb/jobs/4943697008"
+ },
  "sweep:https://job-boards.greenhouse.io/inspiren/jobs/4710486007": {
   "company": "Inspiren",
   "family": "Product Support",
@@ -569,6 +588,15 @@
   "source": "sweep",
   "title": "Director, Product Support",
   "url": "https://job-boards.greenhouse.io/inspiren/jobs/4710486007"
+ },
+ "sweep:https://job-boards.greenhouse.io/liberate/jobs/5078986008": {
+  "company": "Liberate",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "Boston",
+  "source": "sweep",
+  "title": "Head of Solution Engineering",
+  "url": "https://job-boards.greenhouse.io/liberate/jobs/5078986008"
  },
  "sweep:https://job-boards.greenhouse.io/openphone/jobs/4579316006": {
   "company": "OpenPhone",
@@ -624,6 +652,24 @@
   "title": "Director of Business Value Consulting (BVC)",
   "url": "https://job-boards.greenhouse.io/roller/jobs/4840985007"
  },
+ "sweep:https://job-boards.greenhouse.io/snorkelai/jobs/5710174004": {
+  "company": "Snorkel AI",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-16",
+  "location": "New York City, NY (Hybrid); Redwood City, CA (Hybrid); San Francisco, CA (Hybrid)",
+  "source": "sweep",
+  "title": "Head of Forward-Deployed Engineering, DaaS",
+  "url": "https://job-boards.greenhouse.io/snorkelai/jobs/5710174004"
+ },
+ "sweep:https://job-boards.greenhouse.io/syllo/jobs/4329177009": {
+  "company": "Syllo",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "Remote, USA",
+  "source": "sweep",
+  "title": "Director, Value Engineering",
+  "url": "https://job-boards.greenhouse.io/syllo/jobs/4329177009"
+ },
  "sweep:https://job-boards.greenhouse.io/typeface/jobs/4760825007": {
   "company": "Typeface",
   "family": "Solution Consulting",
@@ -632,6 +678,42 @@
   "source": "sweep",
   "title": "Director, Solutions Consulting",
   "url": "https://job-boards.greenhouse.io/typeface/jobs/4760825007"
+ },
+ "sweep:https://job-boards.greenhouse.io/zonecompanysoftwareconsultingllc/jobs/4967339008": {
+  "company": "Zone & Co",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "United States",
+  "source": "sweep",
+  "title": "Director, Solution Consulting",
+  "url": "https://job-boards.greenhouse.io/zonecompanysoftwareconsultingllc/jobs/4967339008"
+ },
+ "sweep:https://jobs.lever.co/saviynt/0c489e94-1fb8-4f7d-bd61-c9ddc5fcc38e": {
+  "company": "Saviynt",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "London / Remote UK / Remote Germany / Amsterdam",
+  "source": "sweep",
+  "title": "Director, Solutions Engineer - EMEA",
+  "url": "https://jobs.lever.co/saviynt/0c489e94-1fb8-4f7d-bd61-c9ddc5fcc38e"
+ },
+ "sweep:https://ordwaylabs.com/careers/director-of-technical-support": {
+  "company": "Ordway",
+  "family": "Product Support",
+  "first_seen": "2026-11-16",
+  "location": "Hybrid \u2013 Remote + Office in Washington DC",
+  "source": "sweep",
+  "title": "Director of Technical Support",
+  "url": "https://ordwaylabs.com/careers/director-of-technical-support"
+ },
+ "sweep:https://www.getmaintainx.com/jobs/director-of-value-engineering-dced63aa": {
+  "company": "MaintainX",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-16",
+  "location": "United States (All hubs)",
+  "source": "sweep",
+  "title": "Director of Value Engineering",
+  "url": "https://www.getmaintainx.com/jobs/director-of-value-engineering-dced63aa"
  },
  "workday:bah:/job/McLean-VA/Cyber-Solutions-Architect-Director_R0238119": {
   "company": "Booz Allen Hamilton",

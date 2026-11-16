@@ -140,6 +140,7 @@
  "Arctic Wolf": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 25,
   "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
@@ -213,6 +214,7 @@
  "Booz Allen Hamilton": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 296,
   "slug": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs",
@@ -285,6 +287,7 @@
  "Chronosphere": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 517,
   "slug": "https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers",
@@ -297,6 +300,7 @@
  "Cityblock Health": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 5,
   "slug": "https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite",
@@ -588,6 +592,7 @@
  "Genesys": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 67,
   "slug": "https://genesys.wd1.myworkdayjobs.com/Genesys",
@@ -1482,6 +1487,7 @@
  "Vantage Data Centers": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 141,
   "slug": "https://vantagedc.wd1.myworkdayjobs.com/Vantage",
@@ -1557,6 +1563,7 @@
  "Zendesk": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-16",
   "found": "2026-11-15",
   "jobs": 21,
   "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",
