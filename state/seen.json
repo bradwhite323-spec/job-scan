@@ -340,6 +340,7 @@
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739519002"
  },
  "greenhouse:datadog:8136510": {
+  "closed": "2026-11-18",
   "company": "Datadog",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",
@@ -370,6 +371,7 @@
   "url": "https://job-boards.greenhouse.io/dataiku/jobs/6236320004"
  },
  "greenhouse:dataiku:6236322004": {
+  "closed": "2026-11-18",
   "company": "Dataiku",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",
@@ -458,6 +460,16 @@
   "tier": 3,
   "title": "Director, Customer Experience, Japan",
   "url": "https://www.revmed.com/careers-list/?gh_jid=8034805003"
+ },
+ "greenhouse:revolutionmedicines:8207847003": {
+  "company": "Revolution Medicines",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-18",
+  "location": "Redwood City, California, United States",
+  "pay": "$211K\u2013$264K",
+  "tier": 1,
+  "title": "Director, Solution Architecture, Commercialization and Corporate systems",
+  "url": "https://www.revmed.com/careers-list/?gh_jid=8207847003"
  },
  "greenhouse:stripe:7523947": {
   "company": "Stripe",
