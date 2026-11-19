@@ -94,6 +94,16 @@
   "title": "Regional Director, Forward Deployed Engineering - Public Sector",
   "url": "https://jobs.ashbyhq.com/cursor/7d6611cb-28bf-4277-8758-178154466934"
  },
+ "ashby:cursor:9f5d7596-501a-4934-9a25-daba53412e95": {
+  "company": "Anysphere (Cursor)",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-19",
+  "location": "Washington, D.C.",
+  "pay": "$288K\u2013$432K",
+  "tier": 2,
+  "title": "Regional Director, Forward Deployed Engineering - Financial Services",
+  "url": "https://jobs.ashbyhq.com/cursor/9f5d7596-501a-4934-9a25-daba53412e95"
+ },
  "ashby:cursor:ad8b3f43-6c66-4918-8eef-cef5753429bf": {
   "company": "Anysphere (Cursor)",
   "family": "Solution Consulting",
@@ -360,6 +370,16 @@
   "title": "Director, Sales Engineering - ASEAN",
   "url": "https://careers.datadoghq.com/detail/8172864/?gh_jid=8172864"
  },
+ "greenhouse:datadog:8393631": {
+  "company": "Datadog",
+  "family": "Product Support",
+  "first_seen": "2026-11-19",
+  "location": "Dublin, Ireland; Paris, France",
+  "pay": "",
+  "tier": 3,
+  "title": "Director, Technical Support Engineering, Premier - EMEA",
+  "url": "https://careers.datadoghq.com/detail/8393631/?gh_jid=8393631"
+ },
  "greenhouse:dataiku:6236320004": {
   "company": "Dataiku",
   "family": "Solution Consulting",
@@ -523,6 +543,7 @@
   "url": "https://stripe.com/jobs/search?gh_jid=8361184"
  },
  "greenhouse:vercel:5979111004": {
+  "closed": "2026-11-19",
   "company": "Vercel",
   "family": "Solution Consulting",
   "first_seen": "2026-11-04",

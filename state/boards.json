@@ -138,13 +138,9 @@
   "via": "careers page"
  },
  "Arctic Wolf": {
-  "ats": "workday",
-  "board_name": null,
-  "broken": "2026-11-18",
-  "found": "2026-11-18",
-  "jobs": 22,
-  "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
-  "via": "careers page"
+  "ats": null,
+  "error": "workday:https://arcticwolf.wd1.myworkdayjobs.com/External HTTPError",
+  "tried": "2026-11-19"
  },
  "Asana": {
   "ats": "greenhouse",
@@ -214,7 +210,7 @@
  "Booz Allen Hamilton": {
   "ats": null,
   "error": "workday:https://bah.wd1.myworkdayjobs.com/BAH_Jobs HTTPError",
-  "tried": "2026-11-18"
+  "tried": "2026-11-19"
  },
  "Brex": {
   "ats": "greenhouse",
@@ -283,7 +279,7 @@
  "Chronosphere": {
   "ats": null,
   "error": "workday:https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers HTTPError",
-  "tried": "2026-11-18"
+  "tried": "2026-11-19"
  },
  "Ciena": {
   "ats": null,
@@ -292,7 +288,7 @@
  "Cityblock Health": {
   "ats": null,
   "error": "workday:https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite HTTPError",
-  "tried": "2026-11-18"
+  "tried": "2026-11-19"
  },
  "Clay": {
   "ats": "recruitee",
@@ -578,13 +574,9 @@
   "slug": "generatebiomedicines"
  },
  "Genesys": {
-  "ats": "workday",
-  "board_name": null,
-  "broken": "2026-11-18",
-  "found": "2026-11-18",
-  "jobs": 64,
-  "slug": "https://genesys.wd1.myworkdayjobs.com/Genesys",
-  "via": "careers page"
+  "ats": null,
+  "error": "workday:https://genesys.wd1.myworkdayjobs.com/Genesys HTTPError",
+  "tried": "2026-11-19"
  },
  "GitLab": {
   "ats": "greenhouse",
@@ -1475,7 +1467,7 @@
  "Vantage Data Centers": {
   "ats": null,
   "error": "workday:https://vantagedc.wd1.myworkdayjobs.com/Vantage HTTPError",
-  "tried": "2026-11-18"
+  "tried": "2026-11-19"
  },
  "Vercel": {
   "ats": "greenhouse",
@@ -1547,6 +1539,7 @@
  "Zendesk": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-19",
   "found": "2026-11-18",
   "jobs": 20,
   "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",

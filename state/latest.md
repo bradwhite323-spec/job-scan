@@ -1,10 +1,13 @@
-*Job watch, Wed Nov 18: 1 new match* (199 boards checked)
+*Job watch, Thu Nov 19: 2 new matches* (198 boards checked)
 
-*San Francisco or New York* (1)
-• <https://www.revmed.com/careers-list/?gh_jid=8207847003|Director, Solution Architecture, Commercialization and Corporate systems> · Revolution Medicines · Redwood City, California, United States · $211K–$264K  `SC`
+*Relocation (other US)* (1)
+• <https://jobs.ashbyhq.com/cursor/9f5d7596-501a-4934-9a25-daba53412e95|Regional Director, Forward Deployed Engineering - Financial Services> · Anysphere (Cursor) · Washington, D.C. (On-site) · $288K–$432K  `FDE`
 
-_No longer listed (2):_ Director, Enterprise Sales Engineering - US Central · Datadog; Director, Sales Engineering · Dataiku
+*Relocation (outside US)* (1)
+• <https://careers.datadoghq.com/detail/8393631/?gh_jid=8393631|Director, Technical Support Engineering, Premier - EMEA> · Datadog · Dublin, Ireland; Paris, France  `Support`
 
-:warning: Couldn't read 2 board(s): Arctic Wolf, Genesys
+_No longer listed (1):_ Head of Field Engineering Operations · Vercel
 
-_35 companies not covered yet (listed on Mondays)._
+:warning: Couldn't read 1 board(s): Zendesk
+
+_37 companies not covered yet (listed on Mondays)._
