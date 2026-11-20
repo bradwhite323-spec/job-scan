@@ -299,6 +299,16 @@
   "title": "Director, Account Solutions Architecture",
   "url": "https://coreweave.com/careers/job?4706082006&board=coreweave&gh_jid=4706082006"
  },
+ "greenhouse:coursera:6265571004": {
+  "company": "Coursera",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-20",
+  "location": "Canada",
+  "pay": "$175K\u2013$218K",
+  "tier": 3,
+  "title": "Director, Solutions Architecture",
+  "url": "https://job-boards.greenhouse.io/coursera/jobs/6265571004"
+ },
  "greenhouse:databricks:7879725002": {
   "company": "Databricks",
   "family": "Solution Consulting",
@@ -482,6 +492,7 @@
   "url": "https://www.revmed.com/careers-list/?gh_jid=8034805003"
  },
  "greenhouse:revolutionmedicines:8207847003": {
+  "closed": "2026-11-20",
   "company": "Revolution Medicines",
   "family": "Solution Consulting",
   "first_seen": "2026-11-18",
