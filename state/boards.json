@@ -140,6 +140,7 @@
  "Arctic Wolf": {
   "ats": "workday",
   "board_name": null,
+  "broken": "2026-11-21",
   "found": "2026-11-20",
   "jobs": 21,
   "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
@@ -213,7 +214,7 @@
  "Booz Allen Hamilton": {
   "ats": null,
   "error": "workday:https://bah.wd1.myworkdayjobs.com/BAH_Jobs HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "Brex": {
   "ats": "greenhouse",
@@ -282,7 +283,7 @@
  "Chronosphere": {
   "ats": null,
   "error": "workday:https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "Ciena": {
   "ats": null,
@@ -291,7 +292,7 @@
  "Cityblock Health": {
   "ats": null,
   "error": "workday:https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "Clay": {
   "ats": "recruitee",
@@ -579,7 +580,7 @@
  "Genesys": {
   "ats": null,
   "error": "workday:https://genesys.wd1.myworkdayjobs.com/Genesys HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "GitLab": {
   "ats": "greenhouse",
@@ -1470,7 +1471,7 @@
  "Vantage Data Centers": {
   "ats": null,
   "error": "workday:https://vantagedc.wd1.myworkdayjobs.com/Vantage HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "Vercel": {
   "ats": "greenhouse",
@@ -1542,7 +1543,7 @@
  "Zendesk": {
   "ats": null,
   "error": "workday:https://zendesk.wd1.myworkdayjobs.com/en-US/zendesk HTTPError",
-  "tried": "2026-11-20"
+  "tried": "2026-11-21"
  },
  "Zocdoc": {
   "ats": "greenhouse",
