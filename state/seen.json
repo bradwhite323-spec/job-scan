@@ -584,6 +584,24 @@
   "title": "Head of Solutions Architecture, Startups",
   "url": "https://job-boards.greenhouse.io/vercel/jobs/6119846004"
  },
+ "sweep:https://apply.workable.com/persuit-1/jobs/view/BF1D47B20D": {
+  "company": "PERSUIT",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-23",
+  "location": "United States (Remote)",
+  "source": "sweep",
+  "title": "Director, Solutions Consulting",
+  "url": "https://apply.workable.com/persuit-1/jobs/view/BF1D47B20D"
+ },
+ "sweep:https://atlassian.com/company/careers/details/15573": {
+  "company": "Atlassian",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-23",
+  "location": "Not stated on page (EMEA role)",
+  "source": "sweep",
+  "title": "Solutions Engineering Director, Strategic Accounts, EMEA",
+  "url": "https://atlassian.com/company/careers/details/15573"
+ },
  "sweep:https://job-boards.greenhouse.io/augmentcomputing/jobs/5074088008": {
   "company": "Augment Code",
   "family": "Solution Consulting",
@@ -673,6 +691,15 @@
   "source": "sweep",
   "title": "Head of Solution Engineering",
   "url": "https://job-boards.greenhouse.io/liberate/jobs/5078986008"
+ },
+ "sweep:https://job-boards.greenhouse.io/obsidiansecurity/jobs/4667428008": {
+  "company": "Obsidian Security",
+  "family": "Solution Consulting",
+  "first_seen": "2026-11-23",
+  "location": "Remote",
+  "source": "sweep",
+  "title": "Director of Sales Engineering - Central",
+  "url": "https://job-boards.greenhouse.io/obsidiansecurity/jobs/4667428008"
  },
  "sweep:https://job-boards.greenhouse.io/openphone/jobs/4579316006": {
   "company": "OpenPhone",
@@ -790,6 +817,15 @@
   "source": "sweep",
   "title": "Director of Value Engineering",
   "url": "https://www.getmaintainx.com/jobs/director-of-value-engineering-dced63aa"
+ },
+ "sweep:https://www.ycombinator.com/companies/zep-ai/jobs/mVon3qA-head-of-forward-deployed-engineering": {
+  "company": "Zep AI",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-23",
+  "location": "San Francisco, CA, US / Remote (US)",
+  "source": "sweep",
+  "title": "Head of Forward Deployed Engineering",
+  "url": "https://www.ycombinator.com/companies/zep-ai/jobs/mVon3qA-head-of-forward-deployed-engineering"
  },
  "workday:bah:/job/McLean-VA/Cyber-Solutions-Architect-Director_R0238119": {
   "company": "Booz Allen Hamilton",
