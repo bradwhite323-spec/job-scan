@@ -1,5 +1,51 @@
 {
- "items": [],
+ "items": [
+  {
+   "company": "Obsidian Security",
+   "title": "Director of Sales Engineering - Central",
+   "url": "https://job-boards.greenhouse.io/obsidiansecurity/jobs/4667428008",
+   "location": "Remote",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "$161K–$238K",
+   "flags": [],
+   "found": "2026-11-23"
+  },
+  {
+   "company": "PERSUIT",
+   "title": "Director, Solutions Consulting",
+   "url": "https://apply.workable.com/persuit-1/jobs/view/BF1D47B20D",
+   "location": "United States (Remote)",
+   "workplace": "Remote",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-23"
+  },
+  {
+   "company": "Zep AI",
+   "title": "Head of Forward Deployed Engineering",
+   "url": "https://www.ycombinator.com/companies/zep-ai/jobs/mVon3qA-head-of-forward-deployed-engineering",
+   "location": "San Francisco, CA, US / Remote (US)",
+   "workplace": "Remote",
+   "family": "Forward Deployed",
+   "pay": "$220K–$270K",
+   "flags": [],
+   "found": "2026-11-23"
+  },
+  {
+   "company": "Atlassian",
+   "title": "Solutions Engineering Director, Strategic Accounts, EMEA",
+   "url": "https://atlassian.com/company/careers/details/15573",
+   "location": "Not stated on page (EMEA role)",
+   "workplace": "Not stated",
+   "family": "Solution Consulting",
+   "pay": "",
+   "flags": [],
+   "found": "2026-11-23"
+  }
+ ],
  "last_posted": "2026-11-22",
- "suggest_add": []
+ "suggest_add": [],
+ "updated": "2026-11-23"
 }
