@@ -1,7 +1,10 @@
-Job watch, Tue Nov 24: no new matches on your list (198 boards checked)
+*Job watch, Wed Nov 25: 1 new match* (198 boards checked)
 
-_No longer listed (1):_ Sr. Director, Forward Deployed Engineering · Hadrian
+*Relocation (other US)* (1)
+• <https://job-boards.greenhouse.io/smartsheet/jobs/8414683|Director, Global Customer Support (Remote Eligible - Costa Rica)> · Smartsheet · San Jose, CR  `Support`
 
-:warning: Couldn't read 2 board(s): Arctic Wolf, Zendesk
+_No longer listed (2):_ Regional Director, Forward Deployed Engineering · Anysphere (Cursor); Director, Support (Bengaluru) · GitLab
 
-_36 companies not covered yet (listed on Mondays)._
+:warning: Couldn't read 1 board(s): Arctic Wolf
+
+_37 companies not covered yet (listed on Mondays)._

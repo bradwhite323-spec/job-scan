@@ -125,6 +125,7 @@
   "url": "https://jobs.ashbyhq.com/cursor/c30b1b69-518a-4fdd-a316-667380bcd608"
  },
  "ashby:cursor:f7ec7811-a573-42fa-8ade-01e2d07681ef": {
+  "closed": "2026-11-25",
   "company": "Anysphere (Cursor)",
   "family": "Forward Deployed",
   "first_seen": "2026-11-04",
@@ -413,6 +414,7 @@
   "url": "https://job-boards.greenhouse.io/dataiku/jobs/6236322004"
  },
  "greenhouse:gitlab:8629019002": {
+  "closed": "2026-11-25",
   "company": "GitLab",
   "family": "Product Support",
   "first_seen": "2026-11-04",
@@ -502,6 +504,16 @@
   "tier": 1,
   "title": "Director, Solution Architecture, Commercialization and Corporate systems",
   "url": "https://www.revmed.com/careers-list/?gh_jid=8207847003"
+ },
+ "greenhouse:smartsheet:8414683": {
+  "company": "Smartsheet",
+  "family": "Product Support",
+  "first_seen": "2026-11-25",
+  "location": "San Jose, CR",
+  "pay": "",
+  "tier": 2,
+  "title": "Director, Global Customer Support (Remote Eligible - Costa Rica)",
+  "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8414683"
  },
  "greenhouse:stripe:7523947": {
   "company": "Stripe",
