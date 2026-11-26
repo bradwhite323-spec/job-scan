@@ -138,13 +138,9 @@
   "via": "careers page"
  },
  "Arctic Wolf": {
-  "ats": "workday",
-  "board_name": null,
-  "broken": "2026-11-25",
-  "found": "2026-11-25",
-  "jobs": 20,
-  "slug": "https://arcticwolf.wd1.myworkdayjobs.com/External",
-  "via": "careers page"
+  "ats": null,
+  "error": "workday:https://arcticwolf.wd1.myworkdayjobs.com/External HTTPError",
+  "tried": "2026-11-26"
  },
  "Asana": {
   "ats": "greenhouse",
@@ -214,7 +210,7 @@
  "Booz Allen Hamilton": {
   "ats": null,
   "error": "workday:https://bah.wd1.myworkdayjobs.com/BAH_Jobs HTTPError",
-  "tried": "2026-11-25"
+  "tried": "2026-11-26"
  },
  "Brex": {
   "ats": "greenhouse",
@@ -283,7 +279,7 @@
  "Chronosphere": {
   "ats": null,
   "error": "workday:https://paloaltonetworks.wd5.myworkdayjobs.com/en-US/panwexternalcareers HTTPError",
-  "tried": "2026-11-25"
+  "tried": "2026-11-26"
  },
  "Ciena": {
   "ats": null,
@@ -292,7 +288,7 @@
  "Cityblock Health": {
   "ats": null,
   "error": "workday:https://cityblockhealth.wd1.myworkdayjobs.com/CityblockExternalCareerSite HTTPError",
-  "tried": "2026-11-25"
+  "tried": "2026-11-26"
  },
  "Clay": {
   "ats": "recruitee",
@@ -580,7 +576,7 @@
  "Genesys": {
   "ats": null,
   "error": "workday:https://genesys.wd1.myworkdayjobs.com/Genesys HTTPError",
-  "tried": "2026-11-25"
+  "tried": "2026-11-26"
  },
  "GitLab": {
   "ats": "greenhouse",
@@ -1471,7 +1467,7 @@
  "Vantage Data Centers": {
   "ats": null,
   "error": "workday:https://vantagedc.wd1.myworkdayjobs.com/Vantage HTTPError",
-  "tried": "2026-11-25"
+  "tried": "2026-11-26"
  },
  "Vercel": {
   "ats": "greenhouse",
@@ -1541,9 +1537,13 @@
   "slug": "zapier"
  },
  "Zendesk": {
-  "ats": null,
-  "error": "workday:https://zendesk.wd1.myworkdayjobs.com/en-US/zendesk HTTPError",
-  "tried": "2026-11-25"
+  "ats": "workday",
+  "board_name": null,
+  "broken": "2026-11-26",
+  "found": "2026-11-26",
+  "jobs": 21,
+  "slug": "https://zendesk.wd1.myworkdayjobs.com/zendesk",
+  "via": "careers page"
  },
  "Zocdoc": {
   "ats": "greenhouse",
