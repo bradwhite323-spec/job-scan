@@ -464,6 +464,16 @@
   "title": "Director, Solutions Engineering",
   "url": "https://job-boards.greenhouse.io/intercom/jobs/8375230"
  },
+ "greenhouse:intercom:8419409": {
+  "company": "Intercom",
+  "family": "Forward Deployed",
+  "first_seen": "2026-11-27",
+  "location": "Chicago, Illinois; New York, New York; San Francisco, California",
+  "pay": "$320K\u2013$390K (varies by location)",
+  "tier": 1,
+  "title": "Senior Director, Forward Deployed Engineering",
+  "url": "https://job-boards.greenhouse.io/intercom/jobs/8419409"
+ },
  "greenhouse:mongodb:8066684": {
   "company": "MongoDB",
   "family": "Solution Consulting",
@@ -485,6 +495,7 @@
   "url": "https://www.okta.com/company/careers/opportunity/8176587?gh_jid=8176587"
  },
  "greenhouse:revolutionmedicines:8034805003": {
+  "closed": "2026-11-27",
   "company": "Revolution Medicines",
   "family": "Product Support",
   "first_seen": "2026-11-04",
